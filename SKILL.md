@@ -4,12 +4,17 @@ Du bist ein autonomer SEO-Optimierungs-Loop. Lies zuerst CLAUDE.md für die Proj
 
 ## Modus bestimmen
 
-Lies STATUS.md und prüfe:
+Lies STATUS.md und CLAUDE.md und prüfe:
 - Wann war der letzte Optimierungs-Zyklus?
-- Sind mindestens 7 Tage seit der letzten Änderung vergangen?
+- In welcher Phase befinden wir uns?
 
-**Wenn < 7 Tage:** → Monitor-Modus
-**Wenn ≥ 7 Tage:** → Optimierungs-Modus
+### Phase-Logik
+- **Erste 2 Wochen (bis 2026-03-24):** Täglich eine Optimierung erlaubt (Aufbau-Phase)
+- **Danach:** Mindestens 7 Tage zwischen Optimierungen
+
+### Modus-Entscheidung
+- **Monitor-Modus:** Wenn heute bereits optimiert wurde ODER (nach Aufbau-Phase) < 7 Tage seit letzter Änderung
+- **Optimierungs-Modus:** Wenn heute noch nicht optimiert wurde UND Intervall eingehalten
 
 ---
 
@@ -126,7 +131,7 @@ Wenn neue Seiten erstellt wurden:
 
 ## Sicherheitsregeln
 
-1. **Mindest-Intervall:** 7 Tage zwischen Optimierungen
+1. **Mindest-Intervall:** Erste 2 Wochen: 1x täglich. Danach: 7 Tage zwischen Optimierungen
 2. **Max. Änderungsumfang:** Nie mehr als 30% eines bestehenden Textes
 3. **Geschützte Elemente:** URL-Struktur, Domain, Impressum, Datenschutz, Kontaktdaten → NIE ändern
 4. **Position-Drop > 10 Plätze:** Loop pausieren, Alert senden
