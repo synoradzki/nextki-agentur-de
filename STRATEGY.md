@@ -20,7 +20,8 @@
 
 ### Phase 1 – Foundation (Woche 1-2)
 - [x] Startseite optimieren für "KI Agentur"
-- [ ] Leistungsseiten ausbauen (KI Beratung, KI Automatisierung)
+- [x] Leistungsseite "KI Beratung" erstellt (/leistungen/ki-beratung/)
+- [ ] Leistungsseite "KI Automatisierung" erstellen
 - [ ] Über-uns-Seite mit echtem E-E-A-T-Content füllen
 - [ ] Impressum vervollständigen (Adresse)
 - [ ] Sitemap bei GSC einreichen
@@ -38,7 +39,7 @@
 - [ ] GEO-Optimierung (Generative Engine Optimization)
 
 ## Nächste Priorität
-**Leistungsseiten ausbauen** – eigene Unterseiten für "KI Beratung" (SV 2.400, KD 3) und "KI Automatisierung" (SV 1.600, KD 0). Das sind die Keywords mit dem besten SV/KD-Verhältnis.
+**Leistungsseite "KI Automatisierung" erstellen** – eigene Unterseite für "KI Automatisierung" (SV 1.600, KD 0). Niedrigste Keyword Difficulty im Portfolio, hohes Suchvolumen. Gleiche Struktur wie /leistungen/ki-beratung/ nutzen.
 
 ## Wettbewerber (Top-Domains für "KI Agentur")
 - ki-agentur.de (Info-Portal)

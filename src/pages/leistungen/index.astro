@@ -21,6 +21,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         und wo klassische Lösungen besser passen. Unser Beratungsansatz ist pragmatisch: Wir identifizieren
         Quick Wins und langfristige Potenziale in Ihren Geschäftsprozessen.
       </p>
+      <a href="/leistungen/ki-beratung/" class="service-link">Mehr zur KI Beratung &rarr;</a>
     </div>
 
     <div class="service-detail">
@@ -87,6 +88,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .service-detail p {
     color: var(--color-text);
     max-width: 700px;
+  }
+
+  .service-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+
+  .service-link:hover {
+    color: var(--color-accent-hover);
   }
 
   .cta-box {

@@ -27,13 +27,13 @@ import SchemaMarkup from '../components/SchemaMarkup.astro';
     <div class="container">
       <h2>Was wir für Sie tun</h2>
       <div class="services-grid">
-        <div class="service-card">
+        <a href="/leistungen/ki-beratung/" class="service-card">
           <h3>KI Beratung</h3>
           <p>
             Wir analysieren Ihre Prozesse und identifizieren Potenziale für den Einsatz von Künstlicher Intelligenz.
             Pragmatisch, nicht theoretisch.
           </p>
-        </div>
+        </a>
         <div class="service-card">
           <h3>KI Automatisierung</h3>
           <p>
@@ -166,6 +166,12 @@ import SchemaMarkup from '../components/SchemaMarkup.astro';
 
   .service-card:hover {
     border-color: var(--color-accent);
+    text-decoration: none;
+  }
+
+  a.service-card {
+    display: block;
+    color: inherit;
   }
 
   .service-card h3, .why-item h3 {
