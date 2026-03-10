@@ -8,6 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <section class="page-header">
     <div class="container">
+      <span class="badge">Über uns</span>
       <h1>Über NextKI Agentur</h1>
     </div>
   </section>
@@ -27,22 +28,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <style>
   .page-header {
-    padding: 4rem 0 2rem;
-    background: var(--color-bg-alt);
+    padding: var(--space-4xl) 0 var(--space-2xl);
   }
 
   .page-header h1 {
-    font-size: 2rem;
-    color: var(--color-primary);
+    font-size: var(--font-size-4xl);
+    color: var(--color-text-heading);
+    font-weight: 700;
+    margin-top: var(--space-md);
   }
 
   .content {
-    padding: 3rem 0;
+    padding: var(--space-2xl) 0 var(--space-4xl);
     max-width: 700px;
   }
 
   .content p {
-    margin-bottom: 1.25rem;
-    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-muted);
+    line-height: 1.7;
   }
 </style>

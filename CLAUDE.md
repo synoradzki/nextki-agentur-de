@@ -27,6 +27,8 @@
 - Domain-Konfiguration
 - Impressum / Datenschutz (rechtliche Texte)
 - Core Business Info (Firmenname, Kontaktdaten)
+- **Design-System:** BaseLayout.astro, Header.astro, Footer.astro, favicon.svg
+- Neue Seiten MÜSSEN die bestehenden CSS-Variablen und Klassen nutzen
 
 ## Deployment
 ```

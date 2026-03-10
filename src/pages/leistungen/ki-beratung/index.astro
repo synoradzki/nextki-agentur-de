@@ -64,13 +64,14 @@ const serviceSchema = {
 
   <section class="page-header">
     <div class="container">
+      <span class="badge">KI Beratung</span>
       <h1>KI Beratung, die bei Ihren Prozessen ansetzt</h1>
       <p>Nicht jedes Problem braucht Künstliche Intelligenz. Aber dort, wo KI passt, verändert sie alles. Wir finden heraus, wo das bei Ihnen der Fall ist.</p>
     </div>
   </section>
 
   <section class="container content">
-    <div class="intro">
+    <div class="content-block">
       <h2>Warum Unternehmen eine KI Beratung brauchen</h2>
       <p>
         Die meisten Unternehmen wissen, dass KI relevant ist. Was fehlt, ist Klarheit: <strong>Wo genau lohnt sich der Einsatz?</strong>
@@ -82,25 +83,25 @@ const serviceSchema = {
       </p>
     </div>
 
-    <div class="process-section">
+    <div class="content-block">
       <h2>Unser Beratungsansatz in 4 Schritten</h2>
       <div class="process-grid">
-        <div class="process-step">
+        <div class="card process-step">
           <span class="step-number">1</span>
           <h3>Prozessanalyse</h3>
           <p>Wir schauen uns Ihre Arbeitsabläufe an – nicht aus der Vogelperspektive, sondern im Detail. Wo wird Zeit gebunden? Wo entstehen Fehler? Wo liegen Daten brach?</p>
         </div>
-        <div class="process-step">
+        <div class="card process-step">
           <span class="step-number">2</span>
           <h3>Potenzial-Bewertung</h3>
           <p>Nicht alles, was sich automatisieren lässt, sollte automatisiert werden. Wir bewerten jeden Use Case nach Aufwand, Nutzen und Umsetzbarkeit – und priorisieren radikal.</p>
         </div>
-        <div class="process-step">
+        <div class="card process-step">
           <span class="step-number">3</span>
           <h3>KI-Strategie & Roadmap</h3>
           <p>Sie bekommen einen klaren Fahrplan: Welche KI-Lösung kommt zuerst? Was kostet sie? Wie lange dauert die Umsetzung? Welche Ressourcen brauchen Sie intern?</p>
         </div>
-        <div class="process-step">
+        <div class="card process-step">
           <span class="step-number">4</span>
           <h3>Umsetzungsbegleitung</h3>
           <p>Auf Wunsch bleiben wir an Bord: Von der Auswahl der richtigen Tools über die <a href="/leistungen/">Implementierung</a> bis zum Wissenstransfer an Ihr Team.</p>
@@ -108,9 +109,9 @@ const serviceSchema = {
       </div>
     </div>
 
-    <div class="use-cases">
+    <div class="content-block">
       <h2>Typische Anwendungsfälle unserer KI Beratung</h2>
-      <ul>
+      <ul class="use-cases-list">
         <li><strong>Dokumentenverarbeitung:</strong> Rechnungen, Verträge und E-Mails automatisch erfassen, klassifizieren und weiterleiten</li>
         <li><strong>Kundenkommunikation:</strong> Intelligente Chatbots und automatisierte Antwortvorschläge, die Ihren Ton treffen</li>
         <li><strong>Datenanalyse:</strong> Muster in Verkaufsdaten, Kundenverhalten oder Produktionsprozessen erkennen</li>
@@ -119,7 +120,7 @@ const serviceSchema = {
       </ul>
     </div>
 
-    <div class="for-whom">
+    <div class="content-block">
       <h2>Für wen ist unsere KI Beratung gedacht?</h2>
       <p>
         Wir arbeiten vorwiegend mit mittelständischen Unternehmen, die spüren, dass KI relevant wird – aber nicht wissen, wo sie anfangen sollen.
@@ -131,7 +132,7 @@ const serviceSchema = {
       </p>
     </div>
 
-    <div class="faq-section">
+    <div class="content-block faq-block">
       <h2>Häufige Fragen zur KI Beratung</h2>
       {faqs.map(faq => (
         <details class="faq-item">
@@ -141,70 +142,76 @@ const serviceSchema = {
       ))}
     </div>
 
-    <div class="cta-box">
+    <div class="cta-card">
       <h2>Lassen Sie uns sprechen</h2>
       <p>In einem kostenlosen Erstgespräch finden wir heraus, ob und wo KI in Ihrem Unternehmen Sinn ergibt. Unverbindlich, konkret und ohne Verkaufsdruck.</p>
-      <a href="/kontakt/" class="btn btn-primary">Kostenlose Erstberatung anfragen</a>
+      <a href="https://calendly.com/synoradzki/telefonkonferenz" target="_blank" rel="noopener" class="btn btn-primary">Kostenlose Erstberatung anfragen</a>
     </div>
   </section>
 </BaseLayout>
 
 <style>
   .page-header {
-    padding: 4rem 0 2rem;
-    background: var(--color-bg-alt);
+    padding: var(--space-4xl) 0 var(--space-2xl);
   }
 
   .page-header h1 {
-    font-size: 2rem;
-    color: var(--color-primary);
+    font-size: var(--font-size-4xl);
+    color: var(--color-text-heading);
     max-width: 700px;
+    font-weight: 700;
+    margin-top: var(--space-md);
+    line-height: 1.2;
   }
 
   .page-header p {
-    color: var(--color-text-light);
-    margin-top: 0.75rem;
-    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin-top: var(--space-sm);
+    font-size: var(--font-size-lg);
     max-width: 650px;
+    line-height: 1.7;
   }
 
   .content {
-    padding: 3rem 0;
+    padding: var(--space-2xl) 0 var(--space-4xl);
   }
 
-  .intro, .process-section, .use-cases, .for-whom, .faq-section {
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid var(--color-border);
+  .content-block {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid var(--color-dark-border);
   }
 
   h2 {
-    font-size: 1.5rem;
-    color: var(--color-primary);
-    margin-bottom: 1rem;
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-heading);
+    margin-bottom: var(--space-md);
+    font-weight: 600;
   }
 
   p {
-    color: var(--color-text);
+    color: var(--color-text-muted);
     max-width: 700px;
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-md);
+    line-height: 1.7;
   }
 
   p:last-child {
     margin-bottom: 0;
   }
 
+  p strong {
+    color: var(--color-text);
+  }
+
   .process-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
   }
 
   .process-step {
-    padding: 1.5rem;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
     position: relative;
   }
 
@@ -214,107 +221,120 @@ const serviceSchema = {
     justify-content: center;
     width: 2rem;
     height: 2rem;
-    background: var(--color-accent);
-    color: #fff;
+    background: var(--color-accent-gradient);
+    color: var(--color-white);
     border-radius: 50%;
     font-weight: 700;
-    font-size: 0.9rem;
-    margin-bottom: 0.75rem;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-sm);
   }
 
   .process-step h3 {
-    font-size: 1.1rem;
-    color: var(--color-primary);
-    margin-bottom: 0.5rem;
+    font-size: var(--font-size-lg);
+    color: var(--color-text-heading);
+    margin-bottom: var(--space-xs);
+    font-weight: 600;
   }
 
   .process-step p {
-    color: var(--color-text-light);
-    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
   }
 
-  .use-cases ul {
+  .use-cases-list {
     list-style: none;
     padding: 0;
   }
 
-  .use-cases li {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--color-border);
-    color: var(--color-text);
+  .use-cases-list li {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-dark-border);
+    color: var(--color-text-muted);
     max-width: 700px;
+    line-height: 1.7;
   }
 
-  .use-cases li:last-child {
+  .use-cases-list li:last-child {
+    border-bottom: none;
+  }
+
+  .use-cases-list li strong {
+    color: var(--color-text);
+  }
+
+  .faq-block {
     border-bottom: none;
   }
 
   .faq-item {
-    border: 1px solid var(--color-border);
-    border-radius: 6px;
-    margin-bottom: 0.75rem;
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-sm);
     max-width: 700px;
+    background: var(--color-dark-card);
+    transition: border-color var(--transition-fast);
+  }
+
+  .faq-item:hover {
+    border-color: var(--color-accent);
   }
 
   .faq-item summary {
-    padding: 1rem 1.25rem;
+    padding: var(--space-md) var(--space-lg);
     cursor: pointer;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-text-heading);
     list-style: none;
+    font-size: var(--font-size-sm);
   }
 
   .faq-item summary::before {
     content: '+';
-    margin-right: 0.75rem;
+    margin-right: var(--space-sm);
     font-weight: 700;
     color: var(--color-accent);
   }
 
   .faq-item[open] summary::before {
-    content: '−';
+    content: '\2212';
   }
 
   .faq-item p {
-    padding: 0 1.25rem 1rem;
-    color: var(--color-text-light);
+    padding: 0 var(--space-lg) var(--space-md);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
   }
 
-  .cta-box {
+  .cta-card {
     text-align: center;
-    padding: 3rem;
-    background: var(--color-bg-alt);
-    border-radius: 8px;
+    padding: var(--space-2xl);
+    background: var(--color-dark-card);
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--radius-md);
   }
 
-  .cta-box h2 {
-    margin-bottom: 0.75rem;
+  .cta-card h2 {
+    margin-bottom: var(--space-sm);
   }
 
-  .cta-box p {
-    font-size: 1.1rem;
-    margin: 0 auto 1.25rem;
-    color: var(--color-text);
+  .cta-card p {
+    font-size: var(--font-size-lg);
+    margin: 0 auto var(--space-lg);
+    color: var(--color-text-muted);
     max-width: 600px;
   }
 
-  .btn-primary {
-    display: inline-block;
-    padding: 0.75rem 1.75rem;
-    border-radius: 6px;
-    font-weight: 600;
-    background: var(--color-accent);
-    color: #fff;
-  }
-
-  .btn-primary:hover {
-    background: var(--color-accent-hover);
-    color: #fff;
-  }
-
   @media (max-width: 768px) {
-    .page-header h1 { font-size: 1.5rem; }
-    .page-header { padding: 3rem 0 1.5rem; }
-    .process-grid { grid-template-columns: 1fr; }
+    .page-header h1 {
+      font-size: var(--font-size-2xl);
+    }
+
+    .page-header {
+      padding: var(--space-3xl) 0 var(--space-xl);
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

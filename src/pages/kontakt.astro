@@ -8,13 +8,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <section class="page-header">
     <div class="container">
+      <span class="badge">Kontakt</span>
       <h1>Kontakt</h1>
       <p>Lassen Sie uns über Ihr Projekt sprechen.</p>
     </div>
   </section>
 
   <section class="container content">
-    <div class="contact-info">
+    <div class="contact-card card">
       <h2>So erreichen Sie uns</h2>
       <p>
         <strong>Telefon:</strong> <a href="tel:+4923069469960">+49 2306 9469960</a><br />
@@ -32,27 +33,43 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <style>
   .page-header {
-    padding: 4rem 0 2rem;
-    background: var(--color-bg-alt);
+    padding: var(--space-4xl) 0 var(--space-2xl);
   }
 
   .page-header h1 {
-    font-size: 2rem;
-    color: var(--color-primary);
+    font-size: var(--font-size-4xl);
+    color: var(--color-text-heading);
+    font-weight: 700;
+    margin-top: var(--space-md);
   }
 
   .page-header p {
-    color: var(--color-text-light);
-    margin-top: 0.75rem;
+    color: var(--color-text-muted);
+    margin-top: var(--space-sm);
   }
 
   .content {
-    padding: 3rem 0;
+    padding: var(--space-2xl) 0 var(--space-4xl);
   }
 
-  .contact-info h2 {
-    font-size: 1.5rem;
-    color: var(--color-primary);
-    margin-bottom: 1rem;
+  .contact-card {
+    max-width: 500px;
+  }
+
+  .contact-card h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-heading);
+    margin-bottom: var(--space-lg);
+    font-weight: 600;
+  }
+
+  .contact-card p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-md);
+    line-height: 1.8;
+  }
+
+  .contact-card strong {
+    color: var(--color-text);
   }
 </style>

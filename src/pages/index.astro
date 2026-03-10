@@ -11,37 +11,45 @@ import SchemaMarkup from '../components/SchemaMarkup.astro';
 
   <section class="hero">
     <div class="container">
-      <h1>Ihre KI Agentur für messbare Ergebnisse</h1>
+      <span class="badge">KI Agentur aus Deutschland</span>
+      <h1>Ihre KI Agentur für <span class="gradient-text">messbare Ergebnisse</span></h1>
       <p class="hero-sub">
         Wir beraten, entwickeln und implementieren KI-Lösungen, die Ihr Unternehmen voranbringen.
         Von der Strategie bis zur Automatisierung – alles aus einer Hand.
       </p>
       <div class="hero-cta">
-        <a href="/kontakt/" class="btn btn-primary">Kostenlose Erstberatung</a>
+        <a href="https://calendly.com/synoradzki/telefonkonferenz" target="_blank" rel="noopener" class="btn btn-primary">Kostenlose Erstberatung</a>
         <a href="/leistungen/" class="btn btn-secondary">Unsere Leistungen</a>
       </div>
     </div>
   </section>
 
-  <section class="services">
+  <section class="section">
     <div class="container">
-      <h2>Was wir für Sie tun</h2>
+      <div class="section-header">
+        <h2>Was wir für Sie tun</h2>
+        <p>Drei Kernbereiche, ein Ziel: KI wirtschaftlich einsetzen.</p>
+      </div>
       <div class="services-grid">
-        <a href="/leistungen/ki-beratung/" class="service-card">
+        <a href="/leistungen/ki-beratung/" class="card service-card">
+          <div class="service-icon">&#x1f4ca;</div>
           <h3>KI Beratung</h3>
           <p>
             Wir analysieren Ihre Prozesse und identifizieren Potenziale für den Einsatz von Künstlicher Intelligenz.
             Pragmatisch, nicht theoretisch.
           </p>
+          <span class="service-link">Mehr erfahren &rarr;</span>
         </a>
-        <div class="service-card">
+        <div class="card service-card">
+          <div class="service-icon">&#x2699;</div>
           <h3>KI Automatisierung</h3>
           <p>
             Repetitive Aufgaben kosten Zeit und Geld. Wir automatisieren Ihre Workflows mit KI –
             von der Datenverarbeitung bis zur Kundenkommunikation.
           </p>
         </div>
-        <div class="service-card">
+        <div class="card service-card">
+          <div class="service-icon">&#x1f680;</div>
           <h3>KI Implementierung</h3>
           <p>
             Von der Proof-of-Concept-Phase bis zum produktiven Einsatz.
@@ -52,9 +60,11 @@ import SchemaMarkup from '../components/SchemaMarkup.astro';
     </div>
   </section>
 
-  <section class="why">
+  <section class="section why-section">
     <div class="container">
-      <h2>Warum NextKI?</h2>
+      <div class="section-header">
+        <h2>Warum NextKI?</h2>
+      </div>
       <div class="why-grid">
         <div class="why-item">
           <h3>Praxiserfahrung</h3>
@@ -72,132 +82,169 @@ import SchemaMarkup from '../components/SchemaMarkup.astro';
     </div>
   </section>
 
-  <section class="cta-section">
+  <section class="section cta-section">
     <div class="container">
-      <h2>Bereit für KI?</h2>
-      <p>Lassen Sie uns in einem kostenlosen Erstgespräch herausfinden, wie KI Ihr Unternehmen voranbringen kann.</p>
-      <a href="/kontakt/" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+      <div class="cta-card">
+        <h2>Bereit für KI?</h2>
+        <p>Lassen Sie uns in einem kostenlosen Erstgespräch herausfinden, wie KI Ihr Unternehmen voranbringen kann.</p>
+        <a href="https://calendly.com/synoradzki/telefonkonferenz" target="_blank" rel="noopener" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+      </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
   .hero {
-    padding: 5rem 0 4rem;
-    background: var(--color-bg-alt);
+    padding: var(--space-4xl) 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 60%;
+    height: 200%;
+    background: radial-gradient(ellipse, var(--color-accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero .container {
+    position: relative;
   }
 
   h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    color: var(--color-primary);
+    font-size: var(--font-size-5xl);
+    line-height: 1.1;
+    color: var(--color-text-heading);
     max-width: 700px;
+    font-weight: 700;
+    margin-top: var(--space-lg);
+  }
+
+  .gradient-text {
+    background: var(--color-accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .hero-sub {
-    font-size: 1.15rem;
-    color: var(--color-text-light);
-    max-width: 600px;
-    margin-top: 1.25rem;
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+    max-width: 560px;
+    margin-top: var(--space-lg);
+    line-height: 1.7;
   }
 
   .hero-cta {
-    margin-top: 2rem;
+    margin-top: var(--space-xl);
     display: flex;
-    gap: 1rem;
+    gap: var(--space-md);
     flex-wrap: wrap;
   }
 
-  .btn {
-    display: inline-block;
-    padding: 0.75rem 1.75rem;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.2s;
-  }
-
-  .btn-primary {
-    background: var(--color-accent);
-    color: #fff;
-  }
-
-  .btn-primary:hover {
-    background: var(--color-accent-hover);
-    color: #fff;
-  }
-
-  .btn-secondary {
-    border: 2px solid var(--color-accent);
-    color: var(--color-accent);
-  }
-
-  .btn-secondary:hover {
-    background: var(--color-accent);
-    color: #fff;
-  }
-
-  .services, .why, .cta-section {
-    padding: 4rem 0;
-  }
-
-  .services {
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  h2 {
-    font-size: 1.75rem;
-    color: var(--color-primary);
-    margin-bottom: 2rem;
-  }
-
-  .services-grid, .why-grid {
+  .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: var(--space-lg);
   }
 
   .service-card {
-    padding: 2rem;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    transition: border-color 0.2s;
-  }
-
-  .service-card:hover {
-    border-color: var(--color-accent);
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
   }
 
   a.service-card {
-    display: block;
     color: inherit;
   }
 
-  .service-card h3, .why-item h3 {
-    font-size: 1.2rem;
-    color: var(--color-primary);
-    margin-bottom: 0.75rem;
+  a.service-card:hover {
+    color: inherit;
   }
 
-  .service-card p, .why-item p {
-    color: var(--color-text-light);
+  .service-icon {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-md);
   }
 
-  .cta-section {
+  .service-card h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-heading);
+    margin-bottom: var(--space-sm);
+    font-weight: 600;
+  }
+
+  .service-card p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  .service-link {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    margin-top: var(--space-md);
+  }
+
+  .why-section {
+    border-top: 1px solid var(--color-dark-border);
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+  }
+
+  .why-item h3 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-heading);
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+  }
+
+  .why-item p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+  }
+
+  .cta-card {
     text-align: center;
-    background: var(--color-bg-alt);
-    padding: 4rem 0;
+    padding: var(--space-3xl);
+    background: var(--color-dark-card);
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--radius-lg);
   }
 
-  .cta-section p {
-    color: var(--color-text-light);
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+  .cta-card h2 {
+    font-size: var(--font-size-3xl);
+    color: var(--color-text-heading);
+    font-weight: 700;
+  }
+
+  .cta-card p {
+    color: var(--color-text-muted);
+    margin: var(--space-md) auto var(--space-xl);
+    font-size: var(--font-size-lg);
+    max-width: 550px;
   }
 
   @media (max-width: 768px) {
-    h1 { font-size: 1.75rem; }
-    .hero { padding: 3rem 0; }
+    h1 {
+      font-size: var(--font-size-3xl);
+    }
+
+    .hero {
+      padding: var(--space-3xl) 0;
+    }
+
+    .cta-card {
+      padding: var(--space-xl);
+    }
   }
 </style>
