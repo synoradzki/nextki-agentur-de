@@ -1,0 +1,197 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SchemaMarkup from '../components/SchemaMarkup.astro';
+---
+
+<BaseLayout
+  title="NextKI Agentur – KI Beratung & Automatisierung für Unternehmen"
+  description="NextKI ist Ihre KI Agentur für Beratung, Automatisierung und Implementierung. Wir helfen Unternehmen, KI strategisch einzusetzen und Prozesse zu optimieren."
+>
+  <SchemaMarkup type="Organization" />
+
+  <section class="hero">
+    <div class="container">
+      <h1>Ihre KI Agentur für messbare Ergebnisse</h1>
+      <p class="hero-sub">
+        Wir beraten, entwickeln und implementieren KI-Lösungen, die Ihr Unternehmen voranbringen.
+        Von der Strategie bis zur Automatisierung – alles aus einer Hand.
+      </p>
+      <div class="hero-cta">
+        <a href="/kontakt/" class="btn btn-primary">Kostenlose Erstberatung</a>
+        <a href="/leistungen/" class="btn btn-secondary">Unsere Leistungen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2>Was wir für Sie tun</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>KI Beratung</h3>
+          <p>
+            Wir analysieren Ihre Prozesse und identifizieren Potenziale für den Einsatz von Künstlicher Intelligenz.
+            Pragmatisch, nicht theoretisch.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>KI Automatisierung</h3>
+          <p>
+            Repetitive Aufgaben kosten Zeit und Geld. Wir automatisieren Ihre Workflows mit KI –
+            von der Datenverarbeitung bis zur Kundenkommunikation.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>KI Implementierung</h3>
+          <p>
+            Von der Proof-of-Concept-Phase bis zum produktiven Einsatz.
+            Wir integrieren KI-Lösungen in Ihre bestehende Infrastruktur.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+      <h2>Warum NextKI?</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>Praxiserfahrung</h3>
+          <p>Keine Theorie-Berater. Wir haben selbst KI-Systeme gebaut und produktiv eingesetzt.</p>
+        </div>
+        <div class="why-item">
+          <h3>Messbare Ergebnisse</h3>
+          <p>Jedes Projekt hat klare KPIs. Sie sehen genau, welchen ROI Ihre KI-Investition bringt.</p>
+        </div>
+        <div class="why-item">
+          <h3>Mittelstands-Fokus</h3>
+          <p>KI ist nicht nur für Konzerne. Wir machen KI zugänglich für Unternehmen jeder Größe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Bereit für KI?</h2>
+      <p>Lassen Sie uns in einem kostenlosen Erstgespräch herausfinden, wie KI Ihr Unternehmen voranbringen kann.</p>
+      <a href="/kontakt/" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 5rem 0 4rem;
+    background: var(--color-bg-alt);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--color-primary);
+    max-width: 700px;
+  }
+
+  .hero-sub {
+    font-size: 1.15rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin-top: 1.25rem;
+  }
+
+  .hero-cta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: var(--color-accent);
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background: var(--color-accent-hover);
+    color: #fff;
+  }
+
+  .btn-secondary {
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .btn-secondary:hover {
+    background: var(--color-accent);
+    color: #fff;
+  }
+
+  .services, .why, .cta-section {
+    padding: 4rem 0;
+  }
+
+  .services {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+  }
+
+  .services-grid, .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    transition: border-color 0.2s;
+  }
+
+  .service-card:hover {
+    border-color: var(--color-accent);
+  }
+
+  .service-card h3, .why-item h3 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .service-card p, .why-item p {
+    color: var(--color-text-light);
+  }
+
+  .cta-section {
+    text-align: center;
+    background: var(--color-bg-alt);
+    padding: 4rem 0;
+  }
+
+  .cta-section p {
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    h1 { font-size: 1.75rem; }
+    .hero { padding: 3rem 0; }
+  }
+</style>

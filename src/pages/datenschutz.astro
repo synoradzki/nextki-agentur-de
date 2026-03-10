@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Datenschutzerklärung – NextKI Agentur"
+  description="Datenschutzerklärung der NextKI Agentur gemäß DSGVO."
+  noindex={true}
+>
+  <section class="page-header">
+    <div class="container">
+      <h1>Datenschutzerklärung</h1>
+    </div>
+  </section>
+
+  <section class="container content">
+    <h2>1. Datenschutz auf einen Blick</h2>
+    <p>
+      Die folgenden Hinweise geben einen Überblick darüber, was mit Ihren personenbezogenen Daten passiert,
+      wenn Sie diese Website besuchen.
+    </p>
+
+    <h2>2. Hosting</h2>
+    <p>
+      Diese Website wird bei Cloudflare Pages gehostet. Cloudflare kann beim Aufruf dieser Seiten technisch
+      bedingt Ihre IP-Adresse erfassen. Weitere Informationen finden Sie in der Datenschutzerklärung von
+      Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a>.
+    </p>
+
+    <h2>3. Allgemeine Hinweise</h2>
+    <p>
+      Diese Website erhebt keine personenbezogenen Daten über Formulare, Cookies oder Tracking-Tools.
+      Es werden keine Analytics-Tools wie Google Analytics eingesetzt.
+    </p>
+
+    <h2>4. Verantwortliche Stelle</h2>
+    <p>
+      Christian Synoradzki<br />
+      NextKI Agentur<br />
+      E-Mail: <a href="mailto:kontakt@nextki-agentur.de">kontakt@nextki-agentur.de</a>
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 4rem 0 2rem;
+    background: var(--color-bg-alt);
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+
+  .content {
+    padding: 3rem 0;
+    max-width: 700px;
+  }
+
+  .content h2 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .content h2:first-of-type {
+    margin-top: 0;
+  }
+
+  .content p {
+    margin-bottom: 1rem;
+  }
+</style>

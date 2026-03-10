@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Blog – KI Wissen & Insights | NextKI Agentur"
+  description="Aktuelle Artikel über KI-Strategien, Automatisierung und Implementierung. Praxiswissen für Unternehmen."
+>
+  <section class="page-header">
+    <div class="container">
+      <h1>Blog</h1>
+      <p>Praxiswissen rund um Künstliche Intelligenz für Unternehmen.</p>
+    </div>
+  </section>
+
+  <section class="container content">
+    <p class="empty-state">Beiträge folgen in Kürze.</p>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 4rem 0 2rem;
+    background: var(--color-bg-alt);
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+
+  .page-header p {
+    color: var(--color-text-light);
+    margin-top: 0.75rem;
+  }
+
+  .content {
+    padding: 3rem 0;
+  }
+
+  .empty-state {
+    color: var(--color-text-light);
+    font-style: italic;
+  }
+</style>

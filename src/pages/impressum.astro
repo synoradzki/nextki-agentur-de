@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Impressum – NextKI Agentur"
+  description="Impressum der NextKI Agentur gemäß § 5 TMG."
+  noindex={true}
+>
+  <section class="page-header">
+    <div class="container">
+      <h1>Impressum</h1>
+    </div>
+  </section>
+
+  <section class="container content">
+    <h2>Angaben gemäß § 5 TMG</h2>
+    <p>
+      Christian Synoradzki<br />
+      NextKI Agentur<br />
+      <!-- Adresse hier einfügen -->
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      E-Mail: <a href="mailto:kontakt@nextki-agentur.de">kontakt@nextki-agentur.de</a>
+    </p>
+
+    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+    <p>
+      Christian Synoradzki<br />
+      <!-- Adresse hier einfügen -->
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 4rem 0 2rem;
+    background: var(--color-bg-alt);
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+
+  .content {
+    padding: 3rem 0;
+    max-width: 700px;
+  }
+
+  .content h2 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .content h2:first-of-type {
+    margin-top: 0;
+  }
+</style>

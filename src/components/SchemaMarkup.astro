@@ -1,0 +1,36 @@
+---
+interface Props {
+  type?: 'Organization' | 'LocalBusiness' | 'Article' | 'FAQPage';
+  data?: Record<string, unknown>;
+}
+
+const { type = 'Organization', data = {} } = Astro.props;
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "NextKI Agentur",
+  "url": "https://nextki-agentur.de",
+  "description": "KI Agentur für Beratung, Automatisierung und Implementierung von KI-Lösungen für Unternehmen.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Germany"
+  },
+  "knowsAbout": [
+    "Künstliche Intelligenz",
+    "KI Beratung",
+    "KI Automatisierung",
+    "Machine Learning",
+    "Prozessoptimierung"
+  ],
+  ...data,
+};
+
+const schemas: Record<string, object> = {
+  Organization: organizationSchema,
+};
+
+const schema = schemas[type] || { ...organizationSchema, ...data };
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

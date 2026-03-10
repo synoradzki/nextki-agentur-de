@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Über uns – NextKI Agentur | KI-Experten aus Deutschland"
+  description="Lernen Sie NextKI kennen: Unsere Mission, unser Team und warum wir KI für den Mittelstand zugänglich machen."
+>
+  <section class="page-header">
+    <div class="container">
+      <h1>Über NextKI Agentur</h1>
+    </div>
+  </section>
+
+  <section class="container content">
+    <p>
+      NextKI ist eine KI-Agentur mit Sitz in Deutschland. Wir helfen Unternehmen dabei,
+      Künstliche Intelligenz gezielt und wirtschaftlich einzusetzen. Kein Hype, keine leeren
+      Versprechen – sondern messbare Ergebnisse.
+    </p>
+    <p>
+      Unser Fokus liegt auf dem Mittelstand: Unternehmen, die von KI profitieren können,
+      aber nicht die Ressourcen eines Konzerns haben. Genau da setzen wir an.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 4rem 0 2rem;
+    background: var(--color-bg-alt);
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+
+  .content {
+    padding: 3rem 0;
+    max-width: 700px;
+  }
+
+  .content p {
+    margin-bottom: 1.25rem;
+    color: var(--color-text);
+  }
+</style>
