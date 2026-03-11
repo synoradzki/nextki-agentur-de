@@ -1,0 +1,349 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const faqs = [
+  {
+    question: "Was kostet KI Automatisierung?",
+    answer: "Die Kosten variieren je nach Prozess und Komplexität. Ein einfacher Workflow lässt sich oft schon ab 5.000 Euro automatisieren. Größere Projekte mit mehreren Systemen und individueller Entwicklung liegen typisch zwischen 15.000 und 50.000 Euro. Das Erstgespräch ist kostenlos – dort schätzen wir den Aufwand realistisch ein."
+  },
+  {
+    question: "Wie lange dauert es, bis eine KI Automatisierung produktiv läuft?",
+    answer: "Einfache Automatisierungen (z. B. E-Mail-Klassifizierung oder Dokumentenextraktion) sind in 2–4 Wochen einsatzbereit. Komplexere Workflows mit mehreren Schnittstellen benötigen 6–12 Wochen. In jedem Fall starten wir mit einem Proof of Concept, der bereits nach wenigen Tagen erste Ergebnisse zeigt."
+  },
+  {
+    question: "Welche Prozesse eignen sich für KI Automatisierung?",
+    answer: "Besonders geeignet sind repetitive, regelbasierte Aufgaben mit hohem Volumen: Datenerfassung, Dokumentenverarbeitung, Kundenanfragen, Qualitätsprüfungen und Reporting. Faustregel: Wenn ein Prozess häufig vorkommt und klaren Mustern folgt, ist er ein guter Kandidat."
+  },
+  {
+    question: "Muss unsere IT-Infrastruktur dafür umgebaut werden?",
+    answer: "In der Regel nicht. Wir integrieren KI-Automatisierungen in Ihre bestehenden Systeme – per API, Webhook oder Datei-Schnittstelle. Die meisten Lösungen laufen cloud-basiert und erfordern keine neuen Server oder Software-Installationen."
+  },
+  {
+    question: "Was passiert, wenn die KI einen Fehler macht?",
+    answer: "Jede Automatisierung hat eingebaute Sicherheitsmechanismen. Bei kritischen Prozessen setzen wir auf Human-in-the-Loop: Die KI bereitet vor, ein Mensch bestätigt. So kombinieren Sie Geschwindigkeit mit Kontrolle. Die Fehlerrate wird kontinuierlich gemessen und die Modelle verbessert."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "KI Automatisierung",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "NextKI Agentur",
+    "url": "https://nextki-agentur.de"
+  },
+  "description": "KI-gestützte Prozessautomatisierung für Unternehmen: Workflows automatisieren, Kosten senken und Mitarbeiter entlasten.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Germany"
+  },
+  "serviceType": "KI Automatisierung"
+};
+---
+
+<BaseLayout
+  title="KI Automatisierung für Unternehmen | NextKI Agentur"
+  description="KI Automatisierung für den Mittelstand: Prozesse automatisieren, Kosten senken, Mitarbeiter entlasten. Vom Proof of Concept bis zum produktiven System."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+
+  <section class="page-header">
+    <div class="container">
+      <span class="badge">KI Automatisierung</span>
+      <h1>KI Automatisierung: Prozesse beschleunigen, Mitarbeiter entlasten</h1>
+      <p>Repetitive Aufgaben kosten Ihr Team jeden Tag wertvolle Stunden. Wir automatisieren diese Prozesse mit KI – messbar, zuverlässig und integriert in Ihre bestehende IT.</p>
+    </div>
+  </section>
+
+  <section class="container content">
+    <div class="content-block">
+      <h2>Warum KI Automatisierung jetzt relevant ist</h2>
+      <p>
+        Laut einer Studie des Fraunhofer IAO verbringen Wissensarbeiter <strong>bis zu 30 % ihrer Arbeitszeit mit repetitiven Tätigkeiten</strong> –
+        Daten übertragen, Dokumente prüfen, Berichte zusammenstellen. Zeit, die für strategische Arbeit fehlt.
+      </p>
+      <p>
+        KI Automatisierung ersetzt dabei keine Mitarbeiter. Sie übernimmt die monotonen Aufgaben, bei denen Menschen weder Freude noch Wertschöpfung empfinden.
+        Das Ergebnis: Ihr Team arbeitet an dem, was wirklich zählt – während die KI im Hintergrund zuverlässig abarbeitet.
+      </p>
+      <p>
+        Gerade für den Mittelstand ist der Zeitpunkt günstig: Die Kosten für KI-Tools sind in den letzten zwei Jahren um über 80 % gesunken,
+        gleichzeitig hat sich die Qualität von Sprachmodellen und Bilderkennungssystemen massiv verbessert.
+      </p>
+    </div>
+
+    <div class="content-block">
+      <h2>Unser Ansatz in 4 Schritten</h2>
+      <div class="process-grid">
+        <div class="card process-step">
+          <span class="step-number">1</span>
+          <h3>Prozess-Audit</h3>
+          <p>Wir analysieren Ihre Workflows und identifizieren Automatisierungspotenziale. Nicht jeder Prozess eignet sich – wir finden die mit dem höchsten ROI.</p>
+        </div>
+        <div class="card process-step">
+          <span class="step-number">2</span>
+          <h3>Proof of Concept</h3>
+          <p>Innerhalb von 1–2 Wochen bauen wir einen funktionierenden Prototyp. Sie sehen konkret, was die KI kann – bevor Sie größere Budgets freigeben.</p>
+        </div>
+        <div class="card process-step">
+          <span class="step-number">3</span>
+          <h3>Integration & Rollout</h3>
+          <p>Der bewährte Prototyp wird in Ihre Systeme integriert – CRM, ERP, E-Mail, Dateisysteme. Per API oder Webhook, ohne Ihre IT-Landschaft umzubauen.</p>
+        </div>
+        <div class="card process-step">
+          <span class="step-number">4</span>
+          <h3>Monitoring & Optimierung</h3>
+          <p>Nach dem Go-Live überwachen wir Durchsatz, Fehlerrate und Einsparungen. Die Automatisierung wird kontinuierlich verbessert – datengetrieben, nicht nach Bauchgefühl.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h2>Typische Anwendungsfälle für KI Automatisierung</h2>
+      <ul class="use-cases-list">
+        <li><strong>Dokumentenverarbeitung:</strong> Rechnungen, Lieferscheine und Verträge automatisch auslesen, klassifizieren und ins System übertragen – mit einer Genauigkeit von über 95 %</li>
+        <li><strong>E-Mail- und Ticketverarbeitung:</strong> Eingehende Anfragen automatisch kategorisieren, priorisieren und an die richtige Abteilung weiterleiten</li>
+        <li><strong>Datenabgleich und Reporting:</strong> Daten aus verschiedenen Quellen zusammenführen, Anomalien erkennen und automatisierte Reports erstellen</li>
+        <li><strong>Kundenkommunikation:</strong> KI-gestützte Chatbots und E-Mail-Antworten, die den Ton Ihres Unternehmens treffen – nicht generisch, sondern markenkonform</li>
+        <li><strong>Qualitätskontrolle:</strong> Fehler in Produktionsprozessen, Texten oder Datensätzen erkennen, bevor sie Kosten verursachen</li>
+      </ul>
+    </div>
+
+    <div class="content-block">
+      <h2>Für wen sich KI Automatisierung lohnt</h2>
+      <p>
+        KI Automatisierung ist besonders sinnvoll für Unternehmen, die bereits funktionierende Prozesse haben – aber an Kapazitätsgrenzen stoßen.
+        Wenn Ihr Team wächst, die Auftragsvolumina steigen oder die Fehlerquote bei manuellen Aufgaben zunimmt,
+        ist Automatisierung der nachhaltigere Weg als einfach mehr Personal einzustellen.
+      </p>
+      <p>
+        Unsere Kunden kommen typisch aus Branchen wie Logistik, E-Commerce, Finanzwesen und produzierendem Gewerbe.
+        Aber auch Agenturen und Dienstleister profitieren – gerade dort, wo viel mit Dokumenten, Daten und Kundenanfragen gearbeitet wird.
+      </p>
+      <p>
+        Sie wollen erst klären, ob KI für Ihre Situation überhaupt Sinn ergibt? Dann starten Sie mit unserer
+        <a href="/leistungen/ki-beratung/">KI Beratung</a> – dort analysieren wir gemeinsam, wo der größte Hebel liegt.
+      </p>
+    </div>
+
+    <div class="content-block faq-block">
+      <h2>Häufige Fragen zur KI Automatisierung</h2>
+      {faqs.map(faq => (
+        <details class="faq-item">
+          <summary>{faq.question}</summary>
+          <p>{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+
+    <div class="cta-card">
+      <h2>Prozesse automatisieren – aber richtig</h2>
+      <p>Im kostenlosen Erstgespräch identifizieren wir den Prozess mit dem höchsten Automatisierungspotenzial in Ihrem Unternehmen.</p>
+      <a href="https://calendly.com/synoradzki/telefonkonferenz?utm_source=next-agentur-de" target="_blank" rel="noopener" class="btn btn-primary">Kostenlose Erstberatung anfragen</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: var(--space-4xl) 0 var(--space-2xl);
+  }
+
+  .page-header h1 {
+    font-size: var(--font-size-4xl);
+    color: var(--color-text-heading);
+    max-width: 700px;
+    font-weight: 700;
+    margin-top: var(--space-md);
+    line-height: 1.2;
+  }
+
+  .page-header p {
+    color: var(--color-text-muted);
+    margin-top: var(--space-sm);
+    font-size: var(--font-size-lg);
+    max-width: 650px;
+    line-height: 1.7;
+  }
+
+  .content {
+    padding: var(--space-2xl) 0 var(--space-4xl);
+  }
+
+  .content-block {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid var(--color-dark-border);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-heading);
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+  }
+
+  p {
+    color: var(--color-text-muted);
+    max-width: 700px;
+    margin-bottom: var(--space-md);
+    line-height: 1.7;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  p strong {
+    color: var(--color-text);
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+  }
+
+  .process-step {
+    position: relative;
+  }
+
+  .step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: var(--color-accent-gradient);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-sm);
+  }
+
+  .process-step h3 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-heading);
+    margin-bottom: var(--space-xs);
+    font-weight: 600;
+  }
+
+  .process-step p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+  }
+
+  .use-cases-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .use-cases-list li {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-dark-border);
+    color: var(--color-text-muted);
+    max-width: 700px;
+    line-height: 1.7;
+  }
+
+  .use-cases-list li:last-child {
+    border-bottom: none;
+  }
+
+  .use-cases-list li strong {
+    color: var(--color-text);
+  }
+
+  .faq-block {
+    border-bottom: none;
+  }
+
+  .faq-item {
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-sm);
+    max-width: 700px;
+    background: var(--color-dark-card);
+    transition: border-color var(--transition-fast);
+  }
+
+  .faq-item:hover {
+    border-color: var(--color-accent);
+  }
+
+  .faq-item summary {
+    padding: var(--space-md) var(--space-lg);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-text-heading);
+    list-style: none;
+    font-size: var(--font-size-sm);
+  }
+
+  .faq-item summary::before {
+    content: '+';
+    margin-right: var(--space-sm);
+    font-weight: 700;
+    color: var(--color-accent);
+  }
+
+  .faq-item[open] summary::before {
+    content: '\2212';
+  }
+
+  .faq-item p {
+    padding: 0 var(--space-lg) var(--space-md);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+  }
+
+  .cta-card {
+    text-align: center;
+    padding: var(--space-2xl);
+    background: var(--color-dark-card);
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--radius-md);
+  }
+
+  .cta-card h2 {
+    margin-bottom: var(--space-sm);
+  }
+
+  .cta-card p {
+    font-size: var(--font-size-lg);
+    margin: 0 auto var(--space-lg);
+    color: var(--color-text-muted);
+    max-width: 600px;
+  }
+
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: var(--font-size-2xl);
+    }
+
+    .page-header {
+      padding: var(--space-3xl) 0 var(--space-xl);
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

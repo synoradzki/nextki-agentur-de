@@ -1,9 +1,9 @@
 # Status – NextKI Agentur
 
 ## Aktueller Stand
-- **Datum:** 2026-03-10
+- **Datum:** 2026-03-11
 - **Phase:** Aufbau (erste 2 Wochen, tägliche Optimierung erlaubt bis 2026-03-24)
-- **Letzter Optimierungs-Zyklus:** 2026-03-10
+- **Letzter Optimierungs-Zyklus:** 2026-03-11
 - **Letzter Monitor-Zyklus:** 2026-03-10
 
 ## Rankings (SERP-Check 2026-03-10)
@@ -27,7 +27,7 @@
 | Startseite | / | Live |
 | Leistungen | /leistungen/ | Live |
 | KI Beratung | /leistungen/ki-beratung/ | Live (2026-03-10) |
-| KI Automatisierung | /leistungen/ki-automatisierung/ | Ausstehend – nächste Priorität |
+| KI Automatisierung | /leistungen/ki-automatisierung/ | Live (2026-03-11) |
 | Über uns | /ueber-uns/ | Live |
 | Kontakt | /kontakt/ | Live |
 | Blog | /blog/ | Live (leer) |
@@ -35,12 +35,12 @@
 | Datenschutz | /datenschutz/ | Live |
 
 ## Indexierung
-- Sitemap eingereicht: Nein (nach nächstem Deploy einreichen)
+- Sitemap eingereicht: Nach Deploy einreichen
 - Google Search Console: Verbunden
 - Indexierte Seiten: 0 (frisch deployed, Crawl ausstehend)
 
 ## Metriken (GSC)
-- Klicks: – (GSC MCP nicht verfügbar in dieser Sitzung)
+- Klicks: – (noch keine Daten)
 - Impressionen: –
 - CTR: –
 - Durchschn. Position: –
@@ -58,8 +58,5 @@
 - "KI Beratung": Top 3 haben Exact-Match-Domains. Differenzierung über konkreten Prozess + Branchen-Spezialisierung nötig.
 - "KI Automatisierung": AI Overview → Definitionen und strukturierte Listen für GEO optimieren. KMU-Fokus ist Differenzierungsmerkmal.
 
-## Nächste Optimierung (frühestens 2026-03-11)
-Leistungsseite "KI Automatisierung" erstellen – /leistungen/ki-automatisierung/
-- SV: 1.600, KD: 0 → idealer nächster Schritt
-- AI Overview vorhanden → GEO-Optimierung einbauen (zitierbare Definitionen)
-- Interne Verlinkung von Startseite, Leistungsübersicht und KI Beratung Seite
+## Nächste Optimierung (frühestens 2026-03-12)
+Über-uns-Seite mit E-E-A-T-Content ausbauen – Expertise von Christian Synoradzki, konkrete Erfahrungen, Vertrauenssignale.

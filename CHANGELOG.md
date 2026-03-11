@@ -1,5 +1,16 @@
 # Changelog – NextKI Agentur
 
+## 2026-03-11 – Leistungsseite "KI Automatisierung" erstellt
+- Neue Unterseite /leistungen/ki-automatisierung/ mit ~1.200 Wörtern
+- Ziel-Keyword: "KI Automatisierung" (SV 1.600, KD 0)
+- Inhalte: 4-Schritte-Prozess (Audit → PoC → Integration → Monitoring), 5 Use Cases, FAQ-Sektion (5 Fragen)
+- Schema Markup: FAQPage + Service JSON-LD
+- GEO-Optimierung: zitierbare Definitionen, konkrete Zahlen (Fraunhofer-Referenz, Kostenangaben)
+- Interne Verlinkung: Startseite (Service-Card → Link), Leistungsübersicht (Service-Link), KI Beratung (Cross-Link bidirektional), Footer-Navigation
+- Loop-Counter aktualisiert: L2·260311
+- Datengrundlage: SERP-Analyse (Salesforce, IHK, Fraunhofer dominieren), KMU/Mittelstand als Differenzierungsnische
+- Erwartete Wirkung: Ranking für "KI Automatisierung" (KD 0) und Long-Tails wie "KI Automatisierung Mittelstand", "Prozesse automatisieren KI"
+
 ## 2026-03-10 – Leistungsseite "KI Beratung" erstellt
 - Neue Unterseite /leistungen/ki-beratung/ mit ~1.200 Wörtern
 - Ziel-Keyword: "KI Beratung" (SV 2.400, KD 3)

@@ -21,7 +21,7 @@
 ### Phase 1 – Foundation (Woche 1-2)
 - [x] Startseite optimieren für "KI Agentur"
 - [x] Leistungsseite "KI Beratung" erstellt (/leistungen/ki-beratung/)
-- [ ] Leistungsseite "KI Automatisierung" erstellen
+- [x] Leistungsseite "KI Automatisierung" erstellt (/leistungen/ki-automatisierung/)
 - [ ] Über-uns-Seite mit echtem E-E-A-T-Content füllen
 - [ ] Impressum vervollständigen (Adresse)
 - [ ] Sitemap bei GSC einreichen
@@ -39,7 +39,7 @@
 - [ ] GEO-Optimierung (Generative Engine Optimization)
 
 ## Nächste Priorität
-**Leistungsseite "KI Automatisierung" erstellen** – eigene Unterseite für "KI Automatisierung" (SV 1.600, KD 0). Niedrigste Keyword Difficulty im Portfolio, hohes Suchvolumen. Gleiche Struktur wie /leistungen/ki-beratung/ nutzen.
+**Über-uns-Seite mit E-E-A-T-Content ausbauen** – Christian Synoradzki als KI-Experte positionieren, konkrete Erfahrungen und Projekte nennen, Vertrauenssignale stärken. Wichtig für Rankings in "KI Beratung" und "KI Agentur".
 
 ## Wettbewerber (Top-Domains für "KI Agentur")
 - ki-agentur.de (Info-Portal)
