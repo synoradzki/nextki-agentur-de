@@ -2,9 +2,10 @@
 # NextKI Agentur – SEO Loop Trigger
 # Wird von crontab aufgerufen
 
-export PATH="$HOME/.nvm/versions/node/v22.17.1/bin:/opt/homebrew/bin:$PATH"
+export PATH="/Users/kimac/.local/bin:/opt/homebrew/bin:/usr/bin:/usr/local/bin:$PATH"
+unset CLAUDECODE
 
-BASE_DIR="/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Claude/WEB SEO Loop"
+BASE_DIR="/Users/kimac/Library/Mobile Documents/com~apple~CloudDocs/Claude/WEB SEO Loop"
 PROJECT_DIR="$BASE_DIR/nextki-agentur-de"
 SKILL_FILE="$BASE_DIR/SKILL.md"
 LOG_FILE="$PROJECT_DIR/loop.log"

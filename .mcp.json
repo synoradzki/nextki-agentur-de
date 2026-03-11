@@ -2,9 +2,9 @@
   "mcpServers": {
     "dataforseo": {
       "type": "stdio",
-      "command": "/Users/christian/.nvm/versions/node/v22.17.1/bin/node",
+      "command": "/opt/homebrew/bin/node",
       "args": [
-        "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Claude/MCP Dataforseo/dist/index.js"
+        "/Users/kimac/Library/Mobile Documents/com~apple~CloudDocs/Claude/MCP Dataforseo/dist/index.js"
       ],
       "env": {
         "DATAFORSEO_LOGIN": "christian@synoradzki.de",
@@ -13,9 +13,9 @@
     },
     "search-console": {
       "type": "stdio",
-      "command": "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Claude/MCP Search Console/venv/bin/python",
+      "command": "/Users/kimac/Library/Mobile Documents/com~apple~CloudDocs/Claude/MCP Search Console/venv/bin/python",
       "args": [
-        "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Claude/MCP Search Console/server.py"
+        "/Users/kimac/Library/Mobile Documents/com~apple~CloudDocs/Claude/MCP Search Console/server.py"
       ],
       "env": {}
     }

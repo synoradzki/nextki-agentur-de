@@ -17,7 +17,7 @@
 - **Betreiber:** Christian Synoradzki
 - **E-Mail:** kontakt@nextki-agentur.de
 - **Website:** synoradzki.de
-- **Calendly (Erstberatung):** https://calendly.com/synoradzki/telefonkonferenz
+- **Calendly (Erstberatung):** https://calendly.com/synoradzki/telefonkonferenz?utm_source=next-agentur-de
 
 ## Loop-Intervalle
 - **Monitor-Modus:** alle 6 Stunden

@@ -2,23 +2,32 @@
 
 ## Aktueller Stand
 - **Datum:** 2026-03-10
-- **Phase:** Aufbau (erste 2 Wochen, tägliche Optimierung erlaubt)
+- **Phase:** Aufbau (erste 2 Wochen, tägliche Optimierung erlaubt bis 2026-03-24)
 - **Letzter Optimierungs-Zyklus:** 2026-03-10
 - **Letzter Monitor-Zyklus:** 2026-03-10
 
 ## Rankings (SERP-Check 2026-03-10)
 | Keyword | Position | Trend | Notizen |
 |---------|----------|-------|---------|
-| KI Agentur | nicht in Top 20 | – | Top 1: open.de, sunzinet.com |
-| KI Beratung | nicht in Top 20 | – | Top 1: kiberatung.de, deloitte.com |
-| KI Automatisierung | nicht in Top 20 | – | Top 1: salesforce.com, ihk.de |
+| KI Agentur | nicht in Top 20 | – | Top 1: open.de, #2: sunzinet.com, #4: nextstrategy.ai |
+| KI Beratung | nicht in Top 20 | – | Top 1: kiberatung.de, #2: die-ki-beratung.de, #3: ki-beratung-deutschland.de |
+| KI Automatisierung | nicht in Top 20 | – | AI Overview vorhanden. Top 1: salesforce.com, #2: ihk.de |
+
+## Ranked Keywords (DataForSEO)
+- Aktuell: 0 Rankings (Domain zu neu, noch nicht indexiert)
+
+## SERP-Beobachtungen
+- **KI Agentur:** 18,8 Mio. Suchergebnisse. Konkurrenten nutzen stark Prozess-Steps, Trust-Signale, CTA. nextstrategy.ai (Hamburg) rankt #4 – ähnliches Profil wie wir, gute Benchmark.
+- **KI Beratung:** Auffällig niedrige Ergebniszahl (150) laut API – könnte auf Knowledge Panel / Local Pack-Dominanz hinweisen. Die ersten 3 Positionen haben keyword-reiche Domains (kiberatung.de, die-ki-beratung.de). Für unsere /leistungen/ki-beratung/ Seite ist Differenzierung durch E-E-A-T wichtig.
+- **KI Automatisierung:** AI Overview aktiv → GEO-Optimierung (zitierbare Definitionen, Listen, Fakten) wird wichtig. Aktuell dominieren große Plattformen (Salesforce, IHK, Fraunhofer). Nische: Umsetzung für KMU/Mittelstand.
 
 ## Seiten
 | Seite | URL | Status |
 |-------|-----|--------|
 | Startseite | / | Live |
 | Leistungen | /leistungen/ | Live |
-| KI Beratung | /leistungen/ki-beratung/ | Neu (2026-03-10) |
+| KI Beratung | /leistungen/ki-beratung/ | Live (2026-03-10) |
+| KI Automatisierung | /leistungen/ki-automatisierung/ | Ausstehend – nächste Priorität |
 | Über uns | /ueber-uns/ | Live |
 | Kontakt | /kontakt/ | Live |
 | Blog | /blog/ | Live (leer) |
@@ -26,12 +35,12 @@
 | Datenschutz | /datenschutz/ | Live |
 
 ## Indexierung
-- Sitemap eingereicht: Nein (nach Deploy einreichen)
+- Sitemap eingereicht: Nein (nach nächstem Deploy einreichen)
 - Google Search Console: Verbunden
-- Indexierte Seiten: 0 (frisch deployed)
+- Indexierte Seiten: 0 (frisch deployed, Crawl ausstehend)
 
 ## Metriken (GSC)
-- Klicks: –
+- Klicks: – (GSC MCP nicht verfügbar in dieser Sitzung)
 - Impressionen: –
 - CTR: –
 - Durchschn. Position: –
@@ -45,7 +54,12 @@
 - Canonical: Ja
 
 ## Konkurrenz-Notizen
-- "KI Agentur": 18,2 Mio. Suchergebnisse, 4 Paid Ads vor Organic
-- "KI Beratung": 113 Mio. Suchergebnisse, kein Paid in Top-Ergebnissen
-- "KI Automatisierung": 10,7 Mio. Suchergebnisse, AI Overview vorhanden
-- Top-Konkurrenten nutzen: Prozess-Steps, FAQs, Video-Testimonials, Trust-Signale
+- "KI Agentur": Konkurrenten setzen auf Prozess-Steps, FAQs, Video-Testimonials, Trust-Signale. nextstrategy.ai als Benchmark (Hamburg-Agentur, ähnliche Positionierung).
+- "KI Beratung": Top 3 haben Exact-Match-Domains. Differenzierung über konkreten Prozess + Branchen-Spezialisierung nötig.
+- "KI Automatisierung": AI Overview → Definitionen und strukturierte Listen für GEO optimieren. KMU-Fokus ist Differenzierungsmerkmal.
+
+## Nächste Optimierung (frühestens 2026-03-11)
+Leistungsseite "KI Automatisierung" erstellen – /leistungen/ki-automatisierung/
+- SV: 1.600, KD: 0 → idealer nächster Schritt
+- AI Overview vorhanden → GEO-Optimierung einbauen (zitierbare Definitionen)
+- Interne Verlinkung von Startseite, Leistungsübersicht und KI Beratung Seite
