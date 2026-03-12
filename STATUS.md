@@ -1,9 +1,9 @@
 # Status – NextKI Agentur
 
 ## Aktueller Stand
-- **Datum:** 2026-03-11
+- **Datum:** 2026-03-12
 - **Phase:** Aufbau (erste 2 Wochen, tägliche Optimierung erlaubt bis 2026-03-24)
-- **Letzter Optimierungs-Zyklus:** 2026-03-11
+- **Letzter Optimierungs-Zyklus:** 2026-03-12
 - **Letzter Monitor-Zyklus:** 2026-03-10
 
 ## Rankings (SERP-Check 2026-03-10)
@@ -28,6 +28,7 @@
 | Leistungen | /leistungen/ | Live |
 | KI Beratung | /leistungen/ki-beratung/ | Live (2026-03-10) |
 | KI Automatisierung | /leistungen/ki-automatisierung/ | Live (2026-03-11) |
+| Über uns | /ueber-uns/ | Live – E-E-A-T-Ausbau (2026-03-12) |
 | Über uns | /ueber-uns/ | Live |
 | Kontakt | /kontakt/ | Live |
 | Blog | /blog/ | Live (leer) |
@@ -58,5 +59,6 @@
 - "KI Beratung": Top 3 haben Exact-Match-Domains. Differenzierung über konkreten Prozess + Branchen-Spezialisierung nötig.
 - "KI Automatisierung": AI Overview → Definitionen und strukturierte Listen für GEO optimieren. KMU-Fokus ist Differenzierungsmerkmal.
 
-## Nächste Optimierung (frühestens 2026-03-12)
-Über-uns-Seite mit E-E-A-T-Content ausbauen – Expertise von Christian Synoradzki, konkrete Erfahrungen, Vertrauenssignale.
+## Nächste Optimierung (frühestens 2026-03-13)
+Ersten Blog-Artikel erstellen – Long-Tail-Keyword mit KD 0 identifizieren und ~1.000-Wörter-Artikel schreiben.
+Alternativ: Startseite optimieren (mehr Prozess-Steps, Trust-Signale, FAQ-Sektion hinzufügen).

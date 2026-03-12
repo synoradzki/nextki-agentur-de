@@ -1,5 +1,15 @@
 # Changelog – NextKI Agentur
 
+## 2026-03-12 – Über-uns-Seite mit E-E-A-T-Content ausgebaut
+- Über-uns-Seite von 2-Absatz-Stub (~60 Wörter) auf vollwertige E-E-A-T-Seite erweitert (~700 Wörter)
+- Inhalte: Gründer-Sektion (Christian Synoradzki), Mission/Differenzierung, 4-Punkte-Ansatz (Werte), Leistungs-Links, Transparenz-Grid, CTA
+- Schema Markup: Person JSON-LD (Christian Synoradzki) + Organization JSON-LD (NextKI Agentur)
+- Interne Verlinkung: /leistungen/ki-beratung/, /leistungen/ki-automatisierung/, /leistungen/
+- Calendly CTA für Erstgespräch
+- Loop-Counter aktualisiert: L3·260312
+- Datengrundlage: E-E-A-T-Strategie (Gründer-Identität als Vertrauenssignal), Mittelstand-Positionierung
+- Erwartete Wirkung: Stärkere E-E-A-T-Signale für "KI Agentur" und "KI Beratung"; Person-Schema unterstützt Knowledge Panel
+
 ## 2026-03-11 – Leistungsseite "KI Automatisierung" erstellt
 - Neue Unterseite /leistungen/ki-automatisierung/ mit ~1.200 Wörtern
 - Ziel-Keyword: "KI Automatisierung" (SV 1.600, KD 0)

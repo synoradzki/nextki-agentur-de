@@ -22,7 +22,7 @@
 - [x] Startseite optimieren für "KI Agentur"
 - [x] Leistungsseite "KI Beratung" erstellt (/leistungen/ki-beratung/)
 - [x] Leistungsseite "KI Automatisierung" erstellt (/leistungen/ki-automatisierung/)
-- [ ] Über-uns-Seite mit echtem E-E-A-T-Content füllen
+- [x] Über-uns-Seite mit E-E-A-T-Content ausgebaut (2026-03-12)
 - [ ] Impressum vervollständigen (Adresse)
 - [ ] Sitemap bei GSC einreichen
 
@@ -39,7 +39,7 @@
 - [ ] GEO-Optimierung (Generative Engine Optimization)
 
 ## Nächste Priorität
-**Über-uns-Seite mit E-E-A-T-Content ausbauen** – Christian Synoradzki als KI-Experte positionieren, konkrete Erfahrungen und Projekte nennen, Vertrauenssignale stärken. Wichtig für Rankings in "KI Beratung" und "KI Agentur".
+**Ersten Blog-Artikel erstellen** – Long-Tail-Keyword mit KD 0 per DataForSEO identifizieren (z. B. "KI Automatisierung Mittelstand", "KI Beratung KMU") und ~1.000-Wörter-Artikel schreiben. Alternativ: Startseite um FAQ-Sektion und Prozess-Steps erweitern (stärkere Trust-Signale für "KI Agentur").
 
 ## Wettbewerber (Top-Domains für "KI Agentur")
 - ki-agentur.de (Info-Portal)

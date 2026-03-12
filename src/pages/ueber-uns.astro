@@ -1,28 +1,178 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Christian Synoradzki",
+  "url": "https://synoradzki.de",
+  "email": "kontakt@nextki-agentur.de",
+  "jobTitle": "Gründer & KI-Berater",
+  "worksFor": {
+    "@type": "ProfessionalService",
+    "name": "NextKI Agentur",
+    "url": "https://nextki-agentur.de"
+  },
+  "knowsAbout": ["Künstliche Intelligenz", "KI Beratung", "KI Automatisierung", "Mittelstand", "Digitalisierung"]
+};
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "NextKI Agentur",
+  "url": "https://nextki-agentur.de",
+  "description": "KI-Agentur für den deutschen Mittelstand. Wir beraten und implementieren KI-Lösungen, die messbare Ergebnisse liefern.",
+  "founder": {
+    "@type": "Person",
+    "name": "Christian Synoradzki"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Germany"
+  },
+  "knowsLanguage": "de",
+  "serviceType": ["KI Beratung", "KI Automatisierung", "KI Consulting"]
+};
 ---
 
 <BaseLayout
-  title="Über uns – NextKI Agentur | KI-Experten aus Deutschland"
-  description="Lernen Sie NextKI kennen: Unsere Mission, unser Team und warum wir KI für den Mittelstand zugänglich machen."
+  title="Über NextKI – Christian Synoradzki | KI-Experte"
+  description="NextKI wird von Christian Synoradzki geführt. Erfahren Sie, wer hinter der KI-Agentur steckt und warum wir auf echte Ergebnisse statt KI-Hype setzen."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+
   <section class="page-header">
     <div class="container">
       <span class="badge">Über uns</span>
-      <h1>Über NextKI Agentur</h1>
+      <h1>Wer hinter NextKI steckt</h1>
+      <p>Keine anonyme Agentur. Kein ausgelagertes Offshore-Team. Ich bin Christian Synoradzki – und ich stehe persönlich für das, was wir hier bauen.</p>
     </div>
   </section>
 
   <section class="container content">
-    <p>
-      NextKI ist eine KI-Agentur mit Sitz in Deutschland. Wir helfen Unternehmen dabei,
-      Künstliche Intelligenz gezielt und wirtschaftlich einzusetzen. Kein Hype, keine leeren
-      Versprechen – sondern messbare Ergebnisse.
-    </p>
-    <p>
-      Unser Fokus liegt auf dem Mittelstand: Unternehmen, die von KI profitieren können,
-      aber nicht die Ressourcen eines Konzerns haben. Genau da setzen wir an.
-    </p>
+
+    <div class="founder-section content-block">
+      <div class="founder-card card">
+        <div class="founder-info">
+          <h2>Christian Synoradzki</h2>
+          <p class="founder-role">Gründer & KI-Berater, NextKI Agentur</p>
+          <p>
+            Ich beschäftige mich mit KI, weil mich die Frage fasziniert: Wie lässt sich diese Technologie so einsetzen,
+            dass sie echten Nutzen erzeugt – nicht nur in Demos, sondern im Arbeitsalltag von Unternehmen?
+          </p>
+          <p>
+            Mein Fokus liegt auf dem Mittelstand. Nicht weil Konzerne uninteressant sind, sondern weil dort
+            der Bedarf am größten und die Hürden oft am höchsten sind. Viele mittelständische Unternehmen haben
+            funktionierende Prozesse, gute Teams – aber keine internen KI-Experten, die wissen,
+            wo man anfängt und wie man Projekte strukturiert, die auch produktiv gehen.
+          </p>
+          <p>
+            Genau da setze ich an. Mit klarem Kopf, konkreten Empfehlungen und einer Haltung:
+            Wenn KI in Ihrem Fall keinen Sinn ergibt, sage ich das auch so.
+          </p>
+          <a href="https://synoradzki.de" target="_blank" rel="noopener" class="founder-link">→ synoradzki.de</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h2>Warum NextKI – und nicht eine der großen Agenturen?</h2>
+      <p>
+        Die meisten KI-Agenturen bedienen primär Enterprise-Kunden mit sechsstelligen Projektbudgets.
+        Das macht wirtschaftlich Sinn – aber es lässt einen Großteil der deutschen Unternehmenslandschaft außen vor.
+      </p>
+      <p>
+        Bei NextKI arbeiten wir anders. Kein Overhead aus Zwischenebenen, kein Verkauf von Standardprodukten als Maßlösungen.
+        Stattdessen: eine ehrliche Analyse Ihrer Situation, ein klar beschriebenes Vorgehen und
+        Implementierungen, die tatsächlich produktiv gehen.
+      </p>
+      <p>
+        Der Name ist kein Zufall: <strong>Next</strong> steht für den nächsten konkreten Schritt –
+        nicht für einen vagen KI-Fahrplan, der in zwei Jahren vielleicht Früchte trägt.
+      </p>
+    </div>
+
+    <div class="content-block">
+      <h2>Wie wir arbeiten</h2>
+      <div class="values-grid">
+        <div class="card value-card">
+          <h3>Zuerst verstehen, dann empfehlen</h3>
+          <p>Bevor wir irgendetwas vorschlagen, hören wir zu. Was sind Ihre echten Engpässe? Wo verliert Ihr Team Zeit? Erst wenn wir das verstehen, macht eine Empfehlung Sinn.</p>
+        </div>
+        <div class="card value-card">
+          <h3>Proof of Concept vor Vollprojekt</h3>
+          <p>KI-Projekte scheitern oft an unrealistischen Erwartungen. Deshalb starten wir immer mit einem Proof of Concept: klein, messbar, mit klaren Erfolgskriterien – bevor größere Budgets fließen.</p>
+        </div>
+        <div class="card value-card">
+          <h3>Ergebnisse statt Präsentationen</h3>
+          <p>Wir liefern keine 80-seitigen Strategie-Decks. Wir liefern funktionierende Systeme, dokumentierte Prozesse und messbare Einsparungen. Was zählt, ist was am Ende produktiv läuft.</p>
+        </div>
+        <div class="card value-card">
+          <h3>Klartext bei Grenzen</h3>
+          <p>KI ist kein Allheilmittel. Manche Prozesse eignen sich nicht für Automatisierung – zumindest nicht heute. Wir sagen das offen, auch wenn es bedeutet, ein Projekt nicht anzunehmen.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h2>Unsere Leistungen</h2>
+      <p>NextKI bietet drei Kernleistungen – je nachdem, wo Sie gerade stehen:</p>
+      <ul class="services-list">
+        <li>
+          <strong><a href="/leistungen/ki-beratung/">KI Beratung</a></strong> –
+          Wenn Sie noch nicht wissen, ob und wo KI bei Ihnen Sinn ergibt. Wir analysieren Ihr Unternehmen und entwickeln eine realistische KI-Strategie.
+        </li>
+        <li>
+          <strong><a href="/leistungen/ki-automatisierung/">KI Automatisierung</a></strong> –
+          Wenn Sie konkrete Prozesse automatisieren wollen. Vom Proof of Concept bis zum produktiven System, integriert in Ihre bestehende IT.
+        </li>
+        <li>
+          <strong><a href="/leistungen/">Alle Leistungen im Überblick</a></strong> –
+          Was wir konkret anbieten, wie wir vorgehen und für wen unsere Leistungen passen.
+        </li>
+      </ul>
+    </div>
+
+    <div class="content-block transparency-block">
+      <h2>Transparenz über wie wir arbeiten</h2>
+      <div class="transparency-grid">
+        <div class="transparency-item">
+          <span class="transparency-label">Standort</span>
+          <span class="transparency-value">Deutschland</span>
+        </div>
+        <div class="transparency-item">
+          <span class="transparency-label">Sprache</span>
+          <span class="transparency-value">Deutsch (Projektsprache)</span>
+        </div>
+        <div class="transparency-item">
+          <span class="transparency-label">Projektgröße</span>
+          <span class="transparency-value">Mittelstand & KMU</span>
+        </div>
+        <div class="transparency-item">
+          <span class="transparency-label">Einstieg</span>
+          <span class="transparency-value">Kostenloses Erstgespräch</span>
+        </div>
+        <div class="transparency-item">
+          <span class="transparency-label">Vorgehen</span>
+          <span class="transparency-value">Proof of Concept zuerst</span>
+        </div>
+        <div class="transparency-item">
+          <span class="transparency-label">Kontakt</span>
+          <span class="transparency-value">kontakt@nextki-agentur.de</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-card">
+      <h2>Erstgespräch – kostenlos und unverbindlich</h2>
+      <p>
+        Sie haben konkrete Fragen zu KI in Ihrem Unternehmen? Im 30-minütigen Erstgespräch
+        schauen wir gemeinsam, ob und wie NextKI Ihnen helfen kann.
+      </p>
+      <a href="https://calendly.com/synoradzki/telefonkonferenz?utm_source=next-agentur-de" target="_blank" rel="noopener" class="btn btn-primary">Erstgespräch vereinbaren</a>
+    </div>
+
   </section>
 </BaseLayout>
 
@@ -36,16 +186,189 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     color: var(--color-text-heading);
     font-weight: 700;
     margin-top: var(--space-md);
+    line-height: 1.2;
+  }
+
+  .page-header p {
+    color: var(--color-text-muted);
+    margin-top: var(--space-sm);
+    font-size: var(--font-size-lg);
+    max-width: 620px;
+    line-height: 1.7;
   }
 
   .content {
     padding: var(--space-2xl) 0 var(--space-4xl);
-    max-width: 700px;
   }
 
-  .content p {
-    margin-bottom: var(--space-lg);
+  .content-block {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid var(--color-dark-border);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-heading);
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+  }
+
+  p {
     color: var(--color-text-muted);
+    max-width: 700px;
+    margin-bottom: var(--space-md);
     line-height: 1.7;
+  }
+
+  p strong {
+    color: var(--color-text);
+  }
+
+  a {
+    color: var(--color-accent);
+  }
+
+  /* Founder Section */
+  .founder-card {
+    display: flex;
+    gap: var(--space-2xl);
+    align-items: flex-start;
+    padding: var(--space-xl);
+  }
+
+  .founder-info h2 {
+    margin-bottom: var(--space-xs);
+  }
+
+  .founder-role {
+    font-size: var(--font-size-sm);
+    color: var(--color-accent) !important;
+    font-weight: 600;
+    margin-bottom: var(--space-md) !important;
+  }
+
+  .founder-link {
+    display: inline-block;
+    margin-top: var(--space-sm);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* Values Grid */
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+  }
+
+  .value-card {
+    padding: var(--space-lg);
+  }
+
+  .value-card h3 {
+    font-size: var(--font-size-base);
+    color: var(--color-text-heading);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+  }
+
+  .value-card p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* Services List */
+  .services-list {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-md);
+  }
+
+  .services-list li {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-dark-border);
+    color: var(--color-text-muted);
+    max-width: 700px;
+    line-height: 1.7;
+  }
+
+  .services-list li:last-child {
+    border-bottom: none;
+  }
+
+  /* Transparency Block */
+  .transparency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+  }
+
+  .transparency-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .transparency-label {
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    font-weight: 600;
+  }
+
+  .transparency-value {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-heading);
+    font-weight: 500;
+  }
+
+  /* CTA */
+  .cta-card {
+    text-align: center;
+    padding: var(--space-2xl);
+    background: var(--color-dark-card);
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--radius-md);
+  }
+
+  .cta-card h2 {
+    margin-bottom: var(--space-sm);
+  }
+
+  .cta-card p {
+    font-size: var(--font-size-lg);
+    margin: 0 auto var(--space-lg);
+    color: var(--color-text-muted);
+    max-width: 580px;
+  }
+
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: var(--font-size-2xl);
+    }
+
+    .page-header {
+      padding: var(--space-3xl) 0 var(--space-xl);
+    }
+
+    .founder-card {
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .transparency-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 </style>
