@@ -39,7 +39,10 @@
 - [ ] GEO-Optimierung (Generative Engine Optimization)
 
 ## Nächste Priorität
-**Ersten Blog-Artikel erstellen** – Long-Tail-Keyword mit KD 0 per DataForSEO identifizieren (z. B. "KI Automatisierung Mittelstand", "KI Beratung KMU") und ~1.000-Wörter-Artikel schreiben. Alternativ: Startseite um FAQ-Sektion und Prozess-Steps erweitern (stärkere Trust-Signale für "KI Agentur").
+**Option A (Blog):** Zweiten Blog-Artikel – "KI Prozessautomatisierung" (SV 90) oder "KI im Unternehmen einführen" (SV 90) – beide MEDIUM Wettbewerb, aber konvertierungsstarke Intention.
+**Option B (Startseite):** FAQ-Sektion + Prozess-Steps ergänzen (Trust-Signale für "KI Agentur").
+**Option C (Schema):** FAQPage-Schema auf Startseite für People-Also-Ask-Snippets.
+→ Entscheidung nach ersten GSC-Impressionsdaten; ohne Daten: Startseite FAQ (Option B) hat direkten Impact auf primäres Keyword.
 
 ## Wettbewerber (Top-Domains für "KI Agentur")
 - ki-agentur.de (Info-Portal)

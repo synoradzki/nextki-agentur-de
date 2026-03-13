@@ -1,5 +1,15 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const articles = [
+  {
+    title: "Intelligente Automatisierung: Was sie ist und wie Unternehmen sie einsetzen",
+    description: "Intelligente Automatisierung geht über klassische Regelwerke hinaus. Dieser Leitfaden erklärt den Unterschied, zeigt Praxisbeispiele und beschreibt die Einführung im Mittelstand.",
+    url: "/blog/intelligente-automatisierung/",
+    date: "13. März 2026",
+    badge: "KI Automatisierung"
+  }
+];
 ---
 
 <BaseLayout
@@ -15,7 +25,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <section class="container content">
-    <p class="empty-state">Beiträge folgen in Kürze.</p>
+    <div class="article-list">
+      {articles.map(article => (
+        <a href={article.url} class="article-card card">
+          <div class="article-card-meta">
+            <span class="badge">{article.badge}</span>
+            <span class="article-date">{article.date}</span>
+          </div>
+          <h2>{article.title}</h2>
+          <p>{article.description}</p>
+          <span class="read-more">Artikel lesen →</span>
+        </a>
+      ))}
+    </div>
   </section>
 </BaseLayout>
 
@@ -40,8 +62,54 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     padding: var(--space-2xl) 0 var(--space-4xl);
   }
 
-  .empty-state {
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 800px;
+  }
+
+  .article-card {
+    display: block;
+    padding: var(--space-xl);
+    text-decoration: none;
+    transition: border-color var(--transition-fast);
+  }
+
+  .article-card:hover {
+    border-color: var(--color-accent);
+  }
+
+  .article-card-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+  }
+
+  .article-date {
     color: var(--color-text-muted);
-    font-style: italic;
+    font-size: var(--font-size-sm);
+  }
+
+  .article-card h2 {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-heading);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    line-height: 1.3;
+  }
+
+  .article-card p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+  }
+
+  .read-more {
+    color: var(--color-accent);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
   }
 </style>

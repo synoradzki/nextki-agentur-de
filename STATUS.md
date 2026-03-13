@@ -1,25 +1,33 @@
 # Status – NextKI Agentur
 
 ## Aktueller Stand
-- **Datum:** 2026-03-12
+- **Datum:** 2026-03-13
 - **Phase:** Aufbau (erste 2 Wochen, tägliche Optimierung erlaubt bis 2026-03-24)
-- **Letzter Optimierungs-Zyklus:** 2026-03-12
-- **Letzter Monitor-Zyklus:** 2026-03-10
+- **Letzter Optimierungs-Zyklus:** 2026-03-13 (Erster Blog-Artikel: Intelligente Automatisierung)
+- **Letzter Monitor-Zyklus:** 2026-03-13 (dieser Lauf)
 
-## Rankings (SERP-Check 2026-03-10)
+## Rankings (SERP-Check 2026-03-13)
 | Keyword | Position | Trend | Notizen |
 |---------|----------|-------|---------|
-| KI Agentur | nicht in Top 20 | – | Top 1: open.de, #2: sunzinet.com, #4: nextstrategy.ai |
-| KI Beratung | nicht in Top 20 | – | Top 1: kiberatung.de, #2: die-ki-beratung.de, #3: ki-beratung-deutschland.de |
-| KI Automatisierung | nicht in Top 20 | – | AI Overview vorhanden. Top 1: salesforce.com, #2: ihk.de |
+| KI Agentur | nicht in Top 29 | → | 19,2 Mio. Ergebnisse. Organic #1: open.de, #2: deinekiagentur.com, #3: baiosphere.org. 4 Paid Ads oben. Neu in Top 30: kiagentenberatung.de (#18), orcaya.com (#16) |
+| KI Beratung | nicht in Top 20 | → | 89,6 Mio. Ergebnisse. #1: kiberatung.de, #2: ki-beratung-deutschland.de, #3: statworx.com. Deloitte #4. Videos + Short Videos im SERP |
+| KI Automatisierung | nicht in Top 20 | → | 11,2 Mio. Ergebnisse. AI Overview aktiv. #1: salesforce.com, #2: servicenow.com, #3: haufe-akademie.de. Blog-Artikel (Jan/Feb 2026) in Top 20: otrs.com #14, contentmanager.de #15, digitelli.de #16 |
+
+## Keyword-Recherche (2026-03-13)
+| Keyword | SV | Wettbewerb | Trend |
+|---------|-----|------------|-------|
+| intelligente Automatisierung | 140 | LOW | ↑ (30→140 seit Nov 2025) |
+| KI Prozessautomatisierung | 90 | MEDIUM | → |
+| KI im Unternehmen einführen | 90 | MEDIUM | → |
+| Prozesse automatisieren KI | 10 | HIGH | → |
 
 ## Ranked Keywords (DataForSEO)
-- Aktuell: 0 Rankings (Domain zu neu, noch nicht indexiert)
+- Aktuell: 0 Rankings (Domain 3 Tage alt, Indexierung ausstehend)
 
-## SERP-Beobachtungen
-- **KI Agentur:** 18,8 Mio. Suchergebnisse. Konkurrenten nutzen stark Prozess-Steps, Trust-Signale, CTA. nextstrategy.ai (Hamburg) rankt #4 – ähnliches Profil wie wir, gute Benchmark.
-- **KI Beratung:** Auffällig niedrige Ergebniszahl (150) laut API – könnte auf Knowledge Panel / Local Pack-Dominanz hinweisen. Die ersten 3 Positionen haben keyword-reiche Domains (kiberatung.de, die-ki-beratung.de). Für unsere /leistungen/ki-beratung/ Seite ist Differenzierung durch E-E-A-T wichtig.
-- **KI Automatisierung:** AI Overview aktiv → GEO-Optimierung (zitierbare Definitionen, Listen, Fakten) wird wichtig. Aktuell dominieren große Plattformen (Salesforce, IHK, Fraunhofer). Nische: Umsetzung für KMU/Mittelstand.
+## SERP-Beobachtungen (2026-03-13)
+- **KI Agentur:** Stabile Lage. 4 Paid Ads. Neue Konkurrenten (kiagentenberatung.de, orcaya.com) in Top 20–30. Video-Karussell weiterhin aktiv.
+- **KI Beratung:** 89,6 Mio. Ergebnisse (vs. 114 Mio. gestern – API-Varianz). Deloitte auf #4 bestätigt. Short Videos neu im SERP. Local Pack nicht mehr sichtbar.
+- **KI Automatisierung:** AI Overview weiterhin aktiv (GEO-Optimierung prioritär). Blog-Artikel aus Jan/Feb 2026 weiterhin in Top 20 → Entscheidung bestätigt: Blog-Content funktioniert für dieses Keyword.
 
 ## Seiten
 | Seite | URL | Status |
@@ -29,36 +37,34 @@
 | KI Beratung | /leistungen/ki-beratung/ | Live (2026-03-10) |
 | KI Automatisierung | /leistungen/ki-automatisierung/ | Live (2026-03-11) |
 | Über uns | /ueber-uns/ | Live – E-E-A-T-Ausbau (2026-03-12) |
-| Über uns | /ueber-uns/ | Live |
 | Kontakt | /kontakt/ | Live |
-| Blog | /blog/ | Live (leer) |
+| Blog | /blog/ | Live – mit erstem Artikel (2026-03-13) |
+| Blog: Intelligente Automatisierung | /blog/intelligente-automatisierung/ | Live (2026-03-13) |
 | Impressum | /impressum/ | Live |
 | Datenschutz | /datenschutz/ | Live |
 
 ## Indexierung
-- Sitemap eingereicht: Nach Deploy einreichen
+- Sitemap eingereicht: Noch ausstehend (GSC MCP in dieser Session nicht verfügbar)
 - Google Search Console: Verbunden
-- Indexierte Seiten: 0 (frisch deployed, Crawl ausstehend)
+- Indexierte Seiten: ausstehend (Crawl-Verzögerung normal für neue Domain)
 
 ## Metriken (GSC)
-- Klicks: – (noch keine Daten)
+- Klicks: – (noch keine Daten, zu früh)
 - Impressionen: –
 - CTR: –
 - Durchschn. Position: –
 
-## On-Page Audit (Startseite)
-- On-Page Score: 100/100
-- Ladezeit: 120ms
-- Interne Links: 8
-- Externe Links: 0
-- HTTPS: Ja
-- Canonical: Ja
+## On-Page Audit
+- Build: 10 Seiten, 448ms, kein Fehler
+- Letzter Build: 2026-03-13
 
-## Konkurrenz-Notizen
-- "KI Agentur": Konkurrenten setzen auf Prozess-Steps, FAQs, Video-Testimonials, Trust-Signale. nextstrategy.ai als Benchmark (Hamburg-Agentur, ähnliche Positionierung).
-- "KI Beratung": Top 3 haben Exact-Match-Domains. Differenzierung über konkreten Prozess + Branchen-Spezialisierung nötig.
-- "KI Automatisierung": AI Overview → Definitionen und strukturierte Listen für GEO optimieren. KMU-Fokus ist Differenzierungsmerkmal.
+## Erkenntnisse dieser Runde
+- "intelligente Automatisierung": SV 140, Wettbewerb LOW, stark steigend seit Nov 2025 → beste Long-Tail-Chance
+- Blog-Artikel (Jan/Feb 2026) ranken bereits für "KI Automatisierung" → Timing bestätigt: frühe Blogartikel können schnell Sichtbarkeit aufbauen
+- AI Overview bei "KI Automatisierung" weiterhin aktiv → Article-Schema + zitierbare Definitionen helfen für GEO
 
-## Nächste Optimierung (frühestens 2026-03-13)
-Ersten Blog-Artikel erstellen – Long-Tail-Keyword mit KD 0 identifizieren und ~1.000-Wörter-Artikel schreiben.
-Alternativ: Startseite optimieren (mehr Prozess-Steps, Trust-Signale, FAQ-Sektion hinzufügen).
+## Nächste Optimierung (frühestens 2026-03-14)
+**Option A:** Zweiten Blog-Artikel erstellen – "KI Prozessautomatisierung" (SV 90) oder "KI im Unternehmen einführen" (SV 90)
+**Option B:** Startseite FAQ-Sektion ergänzen (Trust-Signale für "KI Agentur", Prozess-Steps)
+**Option C:** Schema Markup auf Startseite erweitern (FAQPage + Service)
+→ Priorität hängt von ersten GSC-Daten ab; wenn keine Impressionen für Blog: Option B/C vorziehen

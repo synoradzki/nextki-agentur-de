@@ -1,5 +1,18 @@
 # Changelog – NextKI Agentur
 
+## 2026-03-13 – Erster Blog-Artikel: Intelligente Automatisierung
+- Neue Seite /blog/intelligente-automatisierung/ mit ~1.100 Wörtern erstellt
+- Ziel-Keyword: "intelligente Automatisierung" (SV 140, Wettbewerb LOW, Trend ↑)
+- Sekundär-Keywords: "KI Automatisierung", "KI Prozessautomatisierung"
+- Inhalte: Definition (GEO-optimiert, zitierbar), Vergleich klassisch vs. intelligent, 5 Praxisanwendungen, 4-Phasen-Einführung, Zielgruppen-Check, Kostenübersicht
+- Schema Markup: Article JSON-LD (Author: Christian Synoradzki, datePublished: 2026-03-13)
+- Interne Verlinkung: /leistungen/ki-beratung/, /leistungen/ki-automatisierung/
+- Blog-Index aktualisiert: Artikel-Karte statt "Beiträge folgen in Kürze"
+- Calendly CTA mit UTM-Tracking (utm_medium=blog, utm_content=intelligente-automatisierung)
+- Loop-Counter aktualisiert: L4·260313
+- Datengrundlage: SERP-Analyse zeigt Blog-Artikel (Jan/Feb 2026) in Top 20 für "KI Automatisierung"; "intelligente Automatisierung" LOW-Competition mit steigendem Suchvolumen (30→140 seit Nov 2025)
+- Erwartete Wirkung: Ranking für "intelligente Automatisierung" (KD low), organischer Einstieg in Top 20 für "KI Automatisierung" Long-Tails, GEO-Sichtbarkeit durch zitierbare Definitionen
+
 ## 2026-03-12 – Über-uns-Seite mit E-E-A-T-Content ausgebaut
 - Über-uns-Seite von 2-Absatz-Stub (~60 Wörter) auf vollwertige E-E-A-T-Seite erweitert (~700 Wörter)
 - Inhalte: Gründer-Sektion (Christian Synoradzki), Mission/Differenzierung, 4-Punkte-Ansatz (Werte), Leistungs-Links, Transparenz-Grid, CTA

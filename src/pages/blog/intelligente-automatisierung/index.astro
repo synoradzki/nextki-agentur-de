@@ -1,0 +1,459 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Intelligente Automatisierung: Was sie ist und wie Unternehmen sie einsetzen",
+  "description": "Intelligente Automatisierung kombiniert KI mit klassischer Prozessautomatisierung. Dieser Leitfaden erklärt den Unterschied, zeigt Praxisbeispiele und beschreibt die Einführung im Mittelstand.",
+  "author": {
+    "@type": "Person",
+    "name": "Christian Synoradzki",
+    "url": "https://synoradzki.de"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "NextKI Agentur",
+    "url": "https://nextki-agentur.de"
+  },
+  "datePublished": "2026-03-13",
+  "dateModified": "2026-03-13",
+  "url": "https://nextki-agentur.de/blog/intelligente-automatisierung/",
+  "mainEntityOfPage": "https://nextki-agentur.de/blog/intelligente-automatisierung/"
+};
+---
+
+<BaseLayout
+  title="Intelligente Automatisierung: KI-Leitfaden für Unternehmen"
+  description="Was ist intelligente Automatisierung – und wie setzen Unternehmen sie ein? Praxisleitfaden mit Beispielen, Kosten und Schritten zur Einführung."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <section class="page-header">
+    <div class="container">
+      <div class="article-meta">
+        <span class="badge">Blog</span>
+        <span class="article-date">13. März 2026</span>
+        <span class="article-author">von Christian Synoradzki</span>
+      </div>
+      <h1>Intelligente Automatisierung: Was sie ist und wie Unternehmen sie einsetzen</h1>
+      <p class="article-intro">
+        Viele Unternehmen automatisieren bereits – aber die meisten nutzen dabei nur einen Bruchteil des Potenzials.
+        Intelligente Automatisierung geht einen entscheidenden Schritt weiter: Sie kombiniert klassische Regelwerke
+        mit lernfähigen KI-Modellen. Was das bedeutet, wo der Unterschied liegt und wie eine Einführung im Mittelstand
+        konkret aussieht – dieser Artikel gibt Antworten.
+      </p>
+    </div>
+  </section>
+
+  <article class="container article-content">
+
+    <section class="content-block">
+      <h2>Was ist intelligente Automatisierung?</h2>
+      <p>
+        <strong>Intelligente Automatisierung</strong> bezeichnet die Kombination aus klassischer Prozessautomatisierung
+        und Methoden der Künstlichen Intelligenz – insbesondere maschinellem Lernen, natürlicher Sprachverarbeitung (NLP)
+        und Computer Vision. Das Ergebnis: Systeme, die nicht nur starre Regeln ausführen, sondern mit Ausnahmen umgehen,
+        aus Daten lernen und kontextbasierte Entscheidungen treffen können.
+      </p>
+      <p>
+        Der Begriff wird häufig synonym mit „Hyperautomatisierung" oder „KI-gestützter Prozessautomatisierung" verwendet.
+        Der entscheidende Unterschied zur herkömmlichen Automatisierung liegt im Umgang mit Variabilität: Klassische Systeme
+        versagen, sobald ein Eingangs-Datensatz vom erwarteten Muster abweicht. Intelligente Systeme erkennen die Abweichung,
+        klassifizieren sie und reagieren angemessen – ohne manuellen Eingriff.
+      </p>
+    </section>
+
+    <section class="content-block">
+      <h2>Klassische vs. intelligente Automatisierung: Der Kernunterschied</h2>
+      <div class="comparison-grid">
+        <div class="card comparison-card">
+          <h3>Klassische Automatisierung</h3>
+          <ul class="comparison-list">
+            <li>Regelbasiert: if A → dann B</li>
+            <li>Funktioniert nur bei standardisierten Eingaben</li>
+            <li>Braucht manuelle Ausnahmebehandlung</li>
+            <li>Lernt nicht aus Fehlern</li>
+            <li>Gut für: einfache, stabile Prozesse</li>
+          </ul>
+        </div>
+        <div class="card comparison-card comparison-card--highlight">
+          <h3>Intelligente Automatisierung</h3>
+          <ul class="comparison-list">
+            <li>Lernbasiert: erkennt Muster, passt sich an</li>
+            <li>Verarbeitet unstrukturierte Daten (PDFs, E-Mails, Bilder)</li>
+            <li>Behandelt Ausnahmen selbstständig</li>
+            <li>Verbessert sich mit mehr Daten</li>
+            <li>Gut für: komplexe, variable Prozesse</li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        Ein praktisches Beispiel: Eine klassische Automatisierung kann eine Rechnung verarbeiten – solange sie immer
+        dasselbe Format hat. Eine intelligente Lösung liest auch Rechnungen von 50 verschiedenen Lieferanten,
+        in unterschiedlichen Layouts, erkennt die relevanten Felder und überträgt sie fehlerfrei ins ERP-System.
+        Laut dem Fraunhofer IAO sind <strong>bis zu 70 % der Dokumentenverarbeitungsaufgaben</strong> in Unternehmen
+        mit solchen variablen Formaten konfrontiert – klassische Automatisierung kann diese Aufgaben nur teilweise lösen.
+      </p>
+    </section>
+
+    <section class="content-block">
+      <h2>Typische Einsatzgebiete in der Praxis</h2>
+      <p>
+        Intelligente Automatisierung ist kein Konzept für Großkonzerne. Im Mittelstand liegen oft die besten
+        Anwendungsfälle – weil die Prozesse klar definiert sind, aber zu komplex für klassische Regelwerke:
+      </p>
+      <ul class="use-cases-list">
+        <li>
+          <strong>Dokumentenverarbeitung:</strong> Eingangsrechnungen, Lieferscheine, Verträge und Formulare werden
+          automatisch ausgelesen, klassifiziert und ins System übertragen. Erkennungsgenauigkeit moderner Modelle:
+          über 95 %, auch bei schlechter Scanqualität.
+        </li>
+        <li>
+          <strong>E-Mail- und Ticketverarbeitung:</strong> KI klassifiziert eingehende Anfragen nach Thema, Dringlichkeit
+          und Kundentyp – und leitet sie an die richtige Person weiter oder antwortet direkt mit einer vorbereiteten Antwort.
+          Typische Einsparung: 40–60 % der Bearbeitungszeit bei Standardanfragen.
+        </li>
+        <li>
+          <strong>Qualitätskontrolle:</strong> Computer-Vision-Modelle erkennen Produktionsfehler auf Bildern zuverlässiger
+          und schneller als menschliche Prüfer – in Echtzeit, ohne Ermüdungseffekte.
+        </li>
+        <li>
+          <strong>Daten-Reconciliation und Reporting:</strong> Daten aus CRM, ERP und externen Quellen werden automatisch
+          zusammengeführt, auf Anomalien geprüft und als fertiger Report ausgespielt – täglich, ohne manuellen Aufwand.
+        </li>
+        <li>
+          <strong>Kundenkommunikation:</strong> KI-gestützte Chatbots und E-Mail-Assistenten, die den Ton des Unternehmens
+          treffen und echte Antworten geben – nicht generische Textblöcke. Integration in bestehende CRM-Systeme
+          möglich.
+        </li>
+      </ul>
+    </section>
+
+    <section class="content-block">
+      <h2>Einführung in 4 Phasen: So geht es in der Praxis</h2>
+      <p>
+        Intelligente Automatisierung scheitert selten an der Technologie – sondern am Ansatz. Wer direkt mit einem
+        großen Rollout startet, riskiert Akzeptanzprobleme und versteckten Mehraufwand. Bewährt hat sich ein
+        schrittweises Vorgehen:
+      </p>
+      <div class="process-grid">
+        <div class="card process-step">
+          <span class="step-number">1</span>
+          <h3>Prozess-Audit</h3>
+          <p>
+            Nicht jeder Prozess eignet sich für intelligente Automatisierung. Wichtige Kriterien: hohes Volumen,
+            klare Erfolgsmessung, Daten vorhanden. Wir analysieren, welche Prozesse den größten ROI versprechen –
+            bevor eine Zeile Code geschrieben wird.
+          </p>
+        </div>
+        <div class="card process-step">
+          <span class="step-number">2</span>
+          <h3>Proof of Concept (1–2 Wochen)</h3>
+          <p>
+            Ein funktionierender Prototyp in kurzer Zeit. Sie sehen konkret, was die KI kann – Erkennungsrate,
+            Fehlertypen, Zeitersparnis. Erst danach wird das Budget für den vollen Rollout freigegeben.
+          </p>
+        </div>
+        <div class="card process-step">
+          <span class="step-number">3</span>
+          <h3>Integration & Rollout</h3>
+          <p>
+            Die bewährte Lösung wird in die bestehende IT-Landschaft integriert: per API, Webhook oder
+            Datei-Schnittstelle. Kein Umbau der Infrastruktur notwendig. Human-in-the-Loop für kritische
+            Entscheidungen kann jederzeit eingebaut werden.
+          </p>
+        </div>
+        <div class="card process-step">
+          <span class="step-number">4</span>
+          <h3>Monitoring & Optimierung</h3>
+          <p>
+            Nach dem Go-Live läuft die Automatisierung nicht unbeaufsichtigt. Durchsatz, Fehlerrate und
+            Einsparungen werden gemessen. KI-Modelle lernen mit jedem verarbeiteten Datensatz – die Qualität
+            steigt automatisch.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block">
+      <h2>Für wen lohnt sich intelligente Automatisierung?</h2>
+      <p>
+        Die kurze Antwort: für Unternehmen, die an Kapazitätsgrenzen stoßen, ohne einfach mehr Personal
+        einstellen zu wollen. Intelligente Automatisierung macht dort am meisten Sinn, wo drei Bedingungen
+        zusammentreffen:
+      </p>
+      <p>
+        <strong>Volumen:</strong> Der Prozess läuft oft – täglich, wöchentlich, in großen Mengen.
+        Bei einem einmaligen Vorgang lohnt sich der Aufwand nicht.
+      </p>
+      <p>
+        <strong>Variabilität:</strong> Die Eingangsdaten sind nicht immer identisch – unterschiedliche Formate,
+        Sprachen, Ausnahmen. Genau hier versagt klassische Automatisierung, und genau hier liegt die Stärke
+        intelligenter Systeme.
+      </p>
+      <p>
+        <strong>Messbarkeit:</strong> Es gibt eine klare Kennzahl, an der Erfolg gemessen werden kann –
+        Bearbeitungszeit, Fehlerrate, Kosten pro Vorgang.
+      </p>
+      <p>
+        Unsere Kunden kommen aus Logistik, E-Commerce, Finanzwesen und produzierendem Gewerbe – aber auch
+        aus Agenturen und Dienstleistungsunternehmen, wo viel mit Dokumenten und Kundenanfragen gearbeitet wird.
+        Wer noch unsicher ist, ob KI in der eigenen Situation Sinn ergibt, startet am besten mit einer
+        <a href="/leistungen/ki-beratung/">KI Beratung</a>: dort analysieren wir gemeinsam, wo der größte
+        Hebel liegt.
+      </p>
+    </section>
+
+    <section class="content-block">
+      <h2>Was kostet intelligente Automatisierung?</h2>
+      <p>
+        Die Kosten variieren stark nach Komplexität. Als Orientierung:
+      </p>
+      <ul class="cost-list">
+        <li><strong>Einfache Automatisierung</strong> (z. B. E-Mail-Klassifizierung, Dokumentenextraktion):
+          ab 5.000 – 15.000 Euro, produktiv in 2–4 Wochen</li>
+        <li><strong>Mittlere Komplexität</strong> (mehrere Systeme, individuelle Modelle):
+          15.000 – 40.000 Euro, Laufzeit 6–10 Wochen</li>
+        <li><strong>Komplexe Projekte</strong> (Custom-KI, mehrere Integrationen, Rollout in mehreren Abteilungen):
+          ab 40.000 Euro, iterativer Aufbau über mehrere Monate</li>
+      </ul>
+      <p>
+        Wichtig: Diese Zahlen sprechen für sich erst, wenn man sie gegen den Einsparungseffekt rechnet.
+        Eine Automatisierung, die täglich 3 Stunden Manualarbeit einspart, amortisiert sich in den meisten
+        Fällen innerhalb von 6 bis 12 Monaten. Mehr dazu erläutern wir im
+        <a href="/leistungen/ki-automatisierung/">Detail auf unserer KI Automatisierung Seite</a>.
+      </p>
+    </section>
+
+    <div class="cta-card">
+      <h2>Welche Prozesse lassen sich bei Ihnen automatisieren?</h2>
+      <p>
+        Im kostenlosen Erstgespräch schauen wir uns Ihre Abläufe an und zeigen konkret, wo intelligente
+        Automatisierung den größten Unterschied macht – ohne Hype, mit realistischen Zahlen.
+      </p>
+      <a
+        href="https://calendly.com/synoradzki/telefonkonferenz?utm_source=next-agentur-de&utm_medium=blog&utm_content=intelligente-automatisierung"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+      >
+        Kostenlose Erstberatung vereinbaren
+      </a>
+    </div>
+
+  </article>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: var(--space-4xl) 0 var(--space-2xl);
+    border-bottom: 1px solid var(--color-dark-border);
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  .article-date,
+  .article-author {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+  }
+
+  .page-header h1 {
+    font-size: var(--font-size-4xl);
+    color: var(--color-text-heading);
+    max-width: 750px;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    line-height: 1.2;
+  }
+
+  .article-intro {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-lg);
+    max-width: 680px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .article-content {
+    padding: var(--space-3xl) 0 var(--space-4xl);
+  }
+
+  .content-block {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid var(--color-dark-border);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-heading);
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-heading);
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+  }
+
+  p {
+    color: var(--color-text-muted);
+    max-width: 720px;
+    margin-bottom: var(--space-md);
+    line-height: 1.7;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  p strong {
+    color: var(--color-text);
+  }
+
+  .comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    margin: var(--space-lg) 0;
+  }
+
+  .comparison-card {
+    padding: var(--space-lg);
+  }
+
+  .comparison-card--highlight {
+    border-color: var(--color-accent);
+  }
+
+  .comparison-card h3 {
+    margin-bottom: var(--space-sm);
+  }
+
+  .comparison-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .comparison-list li {
+    padding: var(--space-xs) 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    border-bottom: 1px solid var(--color-dark-border);
+  }
+
+  .comparison-list li:last-child {
+    border-bottom: none;
+  }
+
+  .use-cases-list,
+  .cost-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-md) 0 0;
+  }
+
+  .use-cases-list li,
+  .cost-list li {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-dark-border);
+    color: var(--color-text-muted);
+    max-width: 720px;
+    line-height: 1.7;
+  }
+
+  .use-cases-list li:last-child,
+  .cost-list li:last-child {
+    border-bottom: none;
+  }
+
+  .use-cases-list li strong,
+  .cost-list li strong {
+    color: var(--color-text);
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+  }
+
+  .process-step {
+    position: relative;
+  }
+
+  .step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: var(--color-accent-gradient);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-sm);
+  }
+
+  .process-step h3 {
+    font-size: var(--font-size-md);
+    margin-bottom: var(--space-xs);
+  }
+
+  .process-step p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    max-width: none;
+    margin: 0;
+  }
+
+  .cta-card {
+    text-align: center;
+    padding: var(--space-2xl);
+    background: var(--color-dark-card);
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--radius-md);
+  }
+
+  .cta-card h2 {
+    margin-bottom: var(--space-sm);
+  }
+
+  .cta-card p {
+    font-size: var(--font-size-lg);
+    margin: 0 auto var(--space-lg);
+    max-width: 580px;
+  }
+
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: var(--font-size-2xl);
+    }
+
+    .page-header {
+      padding: var(--space-3xl) 0 var(--space-xl);
+    }
+
+    .comparison-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
