@@ -1,17 +1,17 @@
 # Status – NextKI Agentur
 
 ## Aktueller Stand
-- **Datum:** 2026-03-13
+- **Datum:** 2026-03-14
 - **Phase:** Aufbau (erste 2 Wochen, tägliche Optimierung erlaubt bis 2026-03-24)
-- **Letzter Optimierungs-Zyklus:** 2026-03-13 (Erster Blog-Artikel: Intelligente Automatisierung)
-- **Letzter Monitor-Zyklus:** 2026-03-13 (dieser Lauf)
+- **Letzter Optimierungs-Zyklus:** 2026-03-14 (FAQ-Sektion + FAQPage-Schema auf Startseite, L5·260314)
+- **Letzter Monitor-Zyklus:** 2026-03-14
 
-## Rankings (SERP-Check 2026-03-13)
+## Rankings (SERP-Check 2026-03-14)
 | Keyword | Position | Trend | Notizen |
 |---------|----------|-------|---------|
-| KI Agentur | nicht in Top 29 | → | 19,2 Mio. Ergebnisse. Organic #1: open.de, #2: deinekiagentur.com, #3: baiosphere.org. 4 Paid Ads oben. Neu in Top 30: kiagentenberatung.de (#18), orcaya.com (#16) |
-| KI Beratung | nicht in Top 20 | → | 89,6 Mio. Ergebnisse. #1: kiberatung.de, #2: ki-beratung-deutschland.de, #3: statworx.com. Deloitte #4. Videos + Short Videos im SERP |
-| KI Automatisierung | nicht in Top 20 | → | 11,2 Mio. Ergebnisse. AI Overview aktiv. #1: salesforce.com, #2: servicenow.com, #3: haufe-akademie.de. Blog-Artikel (Jan/Feb 2026) in Top 20: otrs.com #14, contentmanager.de #15, digitelli.de #16 |
+| KI Agentur | nicht in Top 30 | → | 22,1 Mio. Ergebnisse. Organic #1: open.de, #2: deinekiagentur.com, #3: baiosphere.org, #4: ki-agentur.com. kiagentenberatung.de auf #9 (↑ von #13). peter-krause.net auf #27 (↓ von #22). People Also Ask Box aktiv. |
+| KI Beratung | nicht in Top 30 | → | 115 Mio. Ergebnisse. 4 Paid Ads oben. Organic #1: ki-beratung-deutschland.de, #2: valantic.com, #3: Deloitte. Deloitte zurück auf #3 organic. |
+| KI Automatisierung | nicht in Top 20 | → | 11,7 Mio. Ergebnisse. AI Overview weiterhin aktiv. Salesforce #1, Haufe-Akademie #2, IHK #3. otrs.com #17 (↑ von #19 – Blog Jan 2026 steigt). |
 
 ## Keyword-Recherche (2026-03-13)
 | Keyword | SV | Wettbewerb | Trend |
@@ -24,10 +24,10 @@
 ## Ranked Keywords (DataForSEO)
 - Aktuell: 0 Rankings (Domain 3 Tage alt, Indexierung ausstehend)
 
-## SERP-Beobachtungen (2026-03-13)
-- **KI Agentur:** Stabile Lage. 4 Paid Ads. Neue Konkurrenten (kiagentenberatung.de, orcaya.com) in Top 20–30. Video-Karussell weiterhin aktiv.
-- **KI Beratung:** 89,6 Mio. Ergebnisse (vs. 114 Mio. gestern – API-Varianz). Deloitte auf #4 bestätigt. Short Videos neu im SERP. Local Pack nicht mehr sichtbar.
-- **KI Automatisierung:** AI Overview weiterhin aktiv (GEO-Optimierung prioritär). Blog-Artikel aus Jan/Feb 2026 weiterhin in Top 20 → Entscheidung bestätigt: Blog-Content funktioniert für dieses Keyword.
+## SERP-Beobachtungen (2026-03-14)
+- **KI Agentur:** People Also Ask Box aktiv → FAQ-Sektion mit FAQPage-Schema umgesetzt (L5). kiagentenberatung.de weiter aufgestiegen (#18 → #9 within 2 days). peter-krause.net auf #27 (von #22 gestern).
+- **KI Beratung:** 4 Paid Ads dominieren Top 4. Organic schwer zu knacken (valantic, Deloitte, statworx). Local Pack-Strategie (GBP) langfristig wichtig.
+- **KI Automatisierung:** AI Overview weiterhin aktiv – GEO-Optimierung bleibt prioritär. otrs.com-Blog-Artikel Jan 2026 steigt leicht (→ Blog-Content-Strategie bestätigt).
 
 ## Seiten
 | Seite | URL | Status |
@@ -55,16 +55,17 @@
 - Durchschn. Position: –
 
 ## On-Page Audit
-- Build: 10 Seiten, 448ms, kein Fehler
-- Letzter Build: 2026-03-13
+- Build: 10 Seiten, 617ms, kein Fehler
+- Letzter Build: 2026-03-14
 
 ## Erkenntnisse dieser Runde
-- "intelligente Automatisierung": SV 140, Wettbewerb LOW, stark steigend seit Nov 2025 → beste Long-Tail-Chance
-- Blog-Artikel (Jan/Feb 2026) ranken bereits für "KI Automatisierung" → Timing bestätigt: frühe Blogartikel können schnell Sichtbarkeit aufbauen
-- AI Overview bei "KI Automatisierung" weiterhin aktiv → Article-Schema + zitierbare Definitionen helfen für GEO
+- Blog-Artikel Jan/Feb 2026 (otrs) für "KI Automatisierung" leicht gestiegen (#17) → Blog-Content-Strategie weiterhin bestätigt
+- kiagentenberatung.de aggressiv aufgestiegen (#18 → #9 in 2 Tagen) → Konkurrent beobachten
+- People Also Ask für "KI Agentur" aktiv → FAQ-Sektion + FAQPage-Schema (L5) richtige Maßnahme
+- SERP "KI Beratung": 4 Paid Ads + Großunternehmen (Deloitte, valantic) → Differenzierung als KMU-Spezialist weiterhin richtig
 
-## Nächste Optimierung (frühestens 2026-03-14)
-**Option A:** Zweiten Blog-Artikel erstellen – "KI Prozessautomatisierung" (SV 90) oder "KI im Unternehmen einführen" (SV 90)
-**Option B:** Startseite FAQ-Sektion ergänzen (Trust-Signale für "KI Agentur", Prozess-Steps)
-**Option C:** Schema Markup auf Startseite erweitern (FAQPage + Service)
-→ Priorität hängt von ersten GSC-Daten ab; wenn keine Impressionen für Blog: Option B/C vorziehen
+## Nächste Optimierung (frühestens 2026-03-15)
+**Option A (Blog):** Zweiter Blog-Artikel – "KI Prozessautomatisierung" (SV 90) oder "KI im Unternehmen einführen" (SV 90) – MEDIUM Wettbewerb, konvertierungsstarke Intention
+**Option B (Startseite):** "Wie wir arbeiten" Prozess-Steps ergänzen (weiterer Trust-Signal-Ausbau)
+**Option C (GBP):** Google Business Profile anlegen – Local Pack für "KI Beratung" und "KI Agentur" (mittelfristig, manueller Schritt)
+→ Priorität: Option A (Blog) – zweiter Artikel baut Content-Cluster weiter auf; Option C mittelfristig wichtig

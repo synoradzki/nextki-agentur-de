@@ -1,5 +1,15 @@
 # Changelog – NextKI Agentur
 
+## 2026-03-14 – FAQ-Sektion auf Startseite + FAQPage-Schema
+- Neue FAQ-Sektion auf index.astro mit 5 Fragen/Antworten eingefügt
+- Fragen: "Was macht eine KI Agentur?", "Was kostet eine KI Agentur?", "Für welche Unternehmen lohnt sich eine KI Agentur?", "Was unterscheidet eine KI Agentur von einer IT-Agentur?", "Wie lange dauert ein KI-Projekt?"
+- FAQPage JSON-LD Schema Markup inline in index.astro ergänzt
+- Interne Verlinkung: /leistungen/ki-beratung/ und /leistungen/ki-automatisierung/ in FAQ-Antworten
+- Konkrete Zahlen: Kostenangaben (2.000–100.000 €), Projektdauern (4–8 Wochen / 2–6 Monate)
+- Loop-Counter aktualisiert: L5·260314
+- Datengrundlage: People Also Ask Box aktiv für "KI Agentur" (SERP-Analyse 2026-03-14); FAQ erhöht Chance auf PAA-Snippets
+- Erwartete Wirkung: People Also Ask Rich Results für "KI Agentur"-Fragen, zusätzliche Trust-Signale auf primärem Keyword, GEO-Zitierbarkeit durch präzise Antworten mit konkreten Zahlen
+
 ## 2026-03-13 – Erster Blog-Artikel: Intelligente Automatisierung
 - Neue Seite /blog/intelligente-automatisierung/ mit ~1.100 Wörtern erstellt
 - Ziel-Keyword: "intelligente Automatisierung" (SV 140, Wettbewerb LOW, Trend ↑)

@@ -39,10 +39,11 @@
 - [ ] GEO-Optimierung (Generative Engine Optimization)
 
 ## Nächste Priorität
-**Option A (Blog):** Zweiten Blog-Artikel – "KI Prozessautomatisierung" (SV 90) oder "KI im Unternehmen einführen" (SV 90) – beide MEDIUM Wettbewerb, aber konvertierungsstarke Intention.
-**Option B (Startseite):** FAQ-Sektion + Prozess-Steps ergänzen (Trust-Signale für "KI Agentur").
-**Option C (Schema):** FAQPage-Schema auf Startseite für People-Also-Ask-Snippets.
-→ Entscheidung nach ersten GSC-Impressionsdaten; ohne Daten: Startseite FAQ (Option B) hat direkten Impact auf primäres Keyword.
+**Erledigt (2026-03-14):** FAQ-Sektion + FAQPage-Schema auf Startseite (L5) — People Also Ask Ziel für "KI Agentur"
+**Option A (Blog):** Zweiter Blog-Artikel – "KI Prozessautomatisierung" (SV 90) oder "KI im Unternehmen einführen" (SV 90) – beide MEDIUM Wettbewerb, konvertierungsstarke Intention.
+**Option B (Startseite):** "Wie wir arbeiten" Prozess-Steps auf Startseite ergänzen (weiterer Trust-Signal-Ausbau nach FAQ-Sektion).
+**Option C (GBP):** Google Business Profile anlegen – Local Pack für "KI Beratung" und "KI Agentur" (mittelfristig, manueller Schritt).
+→ Nächste Aktion: Option A (Blog – zweiter Artikel für Content-Cluster-Aufbau).
 
 ## Wettbewerber (Top-Domains für "KI Agentur")
 - ki-agentur.de (Info-Portal)

@@ -83,6 +83,37 @@ import SchemaMarkup from '../components/SchemaMarkup.astro';
     </div>
   </section>
 
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Häufige Fragen zur KI Agentur</h2>
+        <p>Antworten auf die wichtigsten Fragen rund um KI und unsere Leistungen.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Was macht eine KI Agentur?</h3>
+          <p>Eine KI Agentur analysiert die Geschäftsprozesse eines Unternehmens, identifiziert Potenziale für den Einsatz von Künstlicher Intelligenz und setzt KI-Lösungen um. Das Leistungsspektrum umfasst KI-Strategie, Beratung, Entwicklung, Integration in bestehende Systeme sowie Schulung der Mitarbeitenden.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Was kostet eine KI Agentur?</h3>
+          <p>Die Kosten hängen vom Projektumfang ab: Eine <a href="/leistungen/ki-beratung/">KI-Beratung</a> beginnt ab ca. 2.000–5.000 €, kleinere Automatisierungsprojekte kosten 5.000–20.000 €, komplexe KI-Implementierungen 30.000–100.000 € und mehr. Bei NextKI starten wir mit einem kostenlosen Erstgespräch und einem transparenten Angebot.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Für welche Unternehmen lohnt sich eine KI Agentur?</h3>
+          <p>Eine KI Agentur lohnt sich für Unternehmen jeder Größe, die repetitive Prozesse automatisieren, Daten besser nutzen oder Wettbewerbsvorteile durch KI aufbauen wollen. Besonders im Mittelstand sind die Effizienzgewinne durch <a href="/leistungen/ki-automatisierung/">KI-Automatisierung</a> oft überproportional hoch – weil hier noch viel manueller Aufwand durch KI ersetzt werden kann.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Was unterscheidet eine KI Agentur von einer klassischen IT-Agentur?</h3>
+          <p>Eine KI Agentur ist auf maschinelles Lernen, KI-Modelle und datengetriebene Automatisierung spezialisiert. Klassische IT-Agenturen entwickeln Software nach festen Regeln. KI-Lösungen hingegen lernen aus Daten, erkennen Muster und treffen eigenständige Entscheidungen – das erfordert spezifisches Know-how, das nicht jede IT-Agentur mitbringt.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Wie lange dauert ein KI-Projekt?</h3>
+          <p>Ein erster Proof of Concept (PoC) ist in 4–8 Wochen realisierbar. Vollständige KI-Implementierungen dauern je nach Komplexität 2–6 Monate. Bei NextKI starten wir mit einer kurzen Analyse-Phase, dann einem PoC mit messbaren Ergebnissen – bevor größere Investitionen folgen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section cta-section">
     <div class="container">
       <div class="cta-card">
@@ -92,6 +123,53 @@ import SchemaMarkup from '../components/SchemaMarkup.astro';
       </div>
     </div>
   </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was macht eine KI Agentur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eine KI Agentur analysiert die Geschäftsprozesse eines Unternehmens, identifiziert Potenziale für den Einsatz von Künstlicher Intelligenz und setzt KI-Lösungen um. Das Leistungsspektrum umfasst KI-Strategie, Beratung, Entwicklung, Integration in bestehende Systeme sowie Schulung der Mitarbeitenden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was kostet eine KI Agentur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Kosten hängen vom Projektumfang ab: Eine KI-Beratung beginnt ab ca. 2.000–5.000 €, kleinere Automatisierungsprojekte kosten 5.000–20.000 €, komplexe KI-Implementierungen 30.000–100.000 € und mehr. Bei NextKI starten wir mit einem kostenlosen Erstgespräch und einem transparenten Angebot."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Für welche Unternehmen lohnt sich eine KI Agentur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eine KI Agentur lohnt sich für Unternehmen jeder Größe, die repetitive Prozesse automatisieren, Daten besser nutzen oder Wettbewerbsvorteile durch KI aufbauen wollen. Besonders im Mittelstand sind die Effizienzgewinne durch KI-Automatisierung oft überproportional hoch – weil hier noch viel manueller Aufwand durch KI ersetzt werden kann."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was unterscheidet eine KI Agentur von einer klassischen IT-Agentur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eine KI Agentur ist auf maschinelles Lernen, KI-Modelle und datengetriebene Automatisierung spezialisiert. Klassische IT-Agenturen entwickeln Software nach festen Regeln. KI-Lösungen hingegen lernen aus Daten, erkennen Muster und treffen eigenständige Entscheidungen – das erfordert spezifisches Know-how, das nicht jede IT-Agentur mitbringt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lange dauert ein KI-Projekt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein erster Proof of Concept (PoC) ist in 4–8 Wochen realisierbar. Vollständige KI-Implementierungen dauern je nach Komplexität 2–6 Monate. Bei NextKI starten wir mit einer kurzen Analyse-Phase, dann einem PoC mit messbaren Ergebnissen – bevor größere Investitionen folgen."
+        }
+      }
+    ]
+  })} />
 </BaseLayout>
 
 <style>
@@ -233,6 +311,47 @@ import SchemaMarkup from '../components/SchemaMarkup.astro';
     margin: var(--space-md) auto var(--space-xl);
     font-size: var(--font-size-lg);
     max-width: 550px;
+  }
+
+  .faq-section {
+    border-top: 1px solid var(--color-dark-border);
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .faq-item {
+    padding: var(--space-xl);
+    border-bottom: 1px solid var(--color-dark-border);
+    background: var(--color-dark-card);
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-item h3 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-heading);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+  }
+
+  .faq-item p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .faq-item p a {
+    color: var(--color-accent);
   }
 
   @media (max-width: 768px) {
